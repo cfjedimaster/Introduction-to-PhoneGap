@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to PhoneGap</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Introduction to PhoneGap</h1>
+					<h3>Making native-only devs jealous since 2009</h3>
+					<p>
+						<small>Presented by <a href="http://www.raymondcamden.com">Raymond Camden</a> / <a href="http://twitter.com/cfjedimaster">@cfjedimaster</a></small>
+					</p>
+				</section>
+
+				<section>					
+					<h2>Who am I?</h2>
+					<ul style="float:left;width:60%">
+						<li>Raymond Camden</li>
+						<li>Developer Evangelist for Adobe</li>
+						<li>Web Standards, HTML5, JavaScript, ColdFusion</li>
+						<li>Blogging at raymondcamden.com</li>
+						<li>Tweeting at @cfjedimaster</li>
+					</ul>
+					<img src="img/ray.png" class="transparent">
+				</section>
+
+				<section>
+						<img src="img/PhoneGapLogo.png">
+				</section>
+
+				<section>
+					<h2>Genesis</h2>
+					<ul>
+						<li>Built at an iPhoneDevCamp in 2009</li>
+						<li>Started by Nitobi</li>
+						<li>Adobe bought Nitobi (2011)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>$$$?</h2>
+					<ul>
+						<li>PhoneGap is free</li>
+						<li>No, really, free</li>
+						<li>Open Source</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Apache Cordova</h2>
+					<ul>
+						<li>cordova.apache.org</li>
+						<li>PhoneGap is Adobe's implementation</li>
+						<li class="fragment">PhoneGap == Cordova</li>
+					</ul>
+					<img src="img/cordova_logo_normal_dark.png">
+				</section>
+
+				<section>
+					<h2>Let's get techy</h2>
+					<ul>
+						<li>Creates "Hybrid" applications</li>
+						<li>Native wrapper around a web view</li>
+						<li>You code in HTML, JavaScript, and CSS</li>
+						<li>PhoneGap "bridges the gap" to native capabilities</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>About that gap...</h2>
+					<ul>
+						<li>PhoneGap tries to follow standards</li>
+						<li>When it doesn't need to do anything, it doesn't</li>
+						<li>In the perfect world, PhoneGap won't exist</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Supported Platforms</h2>
+					<ul>
+						<li>iOS</li>
+						<li>Android</li>
+						<li>Windows Phone 7/8 (+ Windows 8)</li>
+						<li>BlackBerry</li>
+						<li>Bada</li>
+						<li>WebOS</li>
+						<li>Symbian</li>
+					</ul>
+					<br/><br/>
+					<p>
+						<a href="http://phonegap.com/about/feature" target="_new">http://phonegap.com/about/feature</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Features</h2>
+					<ul>
+						<li>Accelerometer - when the device moves</li>
+						<li>Camera - pictures of your cat</li>
+						<li>Capture - audio, video, stills of your cat</li>
+						<li>Compass - for when you're lost in the woods</li>
+						<li>Connection - type of connection</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Features</h2>
+					<ul>
+						<li>Contacts - find and create new friends</li>
+						<li>Device - device and OS version metadata</li>
+						<li>Events - various app/hardware related events</li>
+						<li>File - native file system access (+ upload)</li>
+						<li>Geolocation - for when you're lost in the woods</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Features</h2>
+					<ul>
+						<li>Globalization - date/number/currency formatting</li>
+						<li>Media - related to audio playback (supports record as well)</li>
+						<li>Notification - visual, audible, and tactile notifications</li>
+						<li>Splashscreen - for your splash screen needs</li>
+						<li>Storage - Mini database</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Unofficial Features</h2>
+					<ul>
+						<li class="fragment">Use any of the 10 million JavaScript libraries</li>
+						<li class="fragment">Use any of the 10 million APIs</li>
+						<li class="fragment">Deploy to app store</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Non-Features</h2>
+					<ul>
+						<li class="fragment">UI</li>
+						<li class="fragment">Native Killer</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Who is using PhoneGap?</h2>
+					<img src="img/pgapps.png">
+				</section>
+
+				<!-- This is the demo of the real app - UnTappd probably -->
+				<section>
+					<h1>Real World Demo</h1>
+				</section>
+
+				<section>
+					<h2>How is it done?</h2>
+					<ul>
+						<li>Going from HTML to Binary</li>
+						<li>Making use of the awesome</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>How is it done? (Option 1)</h2>
+					<ul>
+						<li>Get SDK(s) + Cordova download</li>
+						<li>Command line init</li>
+						<li>Switch to the editor for that platform</li>
+						<li>Edit HTML, simulate, build</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+				</section>
+
+				<section>
+					<h2>How is it done? (Option 2)</h2>
+					<ul>
+						<li>cordova-client</li>
+						<li>https://git-wip-us.apache.org/repos/asf?p=cordova-cli.git</li>
+						<li>"Meta Tool"</li>
+						<li>Still requires SDKs</li>
+						<li>All command line</li>
+						<li><strike>(Not official!)</strike></li>
+						<li>Added to PhoneGap 2.4.0</li>
+					</ul>
+				</section>
+
+				<!-- This is the pgios1 demo, the simple cat one -->
+				<section>
+					<h1>Demo</h1>
+				</section>
+
+				<section>
+					<h2>How is it done? (Option 3)</h2>
+					<img src="img/Build-Bot.png">
+				</section>
+
+				<section>
+					<h2>How do we do the awesome?</h2>
+					<ul>
+						<li>Include cordova-VERSION.js</li>
+						<li>Only does what it has to...</li>
+						<li>config.xml (but we'll worry about that later)</li>
+						<li>plugins (but we'll worry about that later)</li>
+					</ul>
+				</section>
+
+				<!-- demo of camera app -->
+				<section>
+					<h1>Demo</h1>
+				</section>
+
+				<!--
+				other demos?
+				contacts
+				compass
+				-->
+
+				<section>
+					<h2>Real World Building</h2>
+					<ul class="fragment">
+						<li>Desktop Browser</li>
+						<li>Mobile via Web</li>
+						<li>Ripple Emulator</li>
+						<li>Local SDK to Simulator/Device</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Desktop Browser</h2>
+					<ul class="left fragment">
+						<li>Pro: Super Fast</li>
+						<li>Pro: No setup</li>
+						<li>Pro: Debugging Rocks</li>
+					</ul>
+					<p/>
+					<ul class="left fragment">
+						<li>Con: UI isn't right</li>
+						<li>Con: UX isn't right</li>
+						<li>Con: Features missing</li>
+						<li>Con: Security restrictions</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+				</section>
+
+				<section>
+					<h2>Mobile Via Web</h2>
+					<ul class="left fragment">
+						<li>Pro: Kinda Fast</li>
+						<li>Pro: Minimal setup</li>
+						<li>Pro: UI and UX testing</li>
+					</ul>
+					<p/>
+					<ul class="left fragment">
+						<li>Con: Features missing</li>
+						<li>Con: Security restrictions</li>
+						<li>Con: Debugging (kinda) sucks</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+				</section>
+
+				<section>
+					<h2>Ripple Emulator</h2>
+					<ul class="left fragment">
+						<li>Pro: Fast</li>
+						<li>Pro: Similar UI</li>
+						<li>Pro: Free</li>
+						<li>Pro: Security restrictions gone</li>
+					</ul>
+					<p/>
+					<ul class="left fragment">
+						<li>Con: Doesn't support 100% of the PhoneGap APIs</li>
+						<li>Con: Still not on the device</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>To Install</h2>
+					<ul>
+						<li>Go to the Chrome Web Store: https://chrome.google.com/webstore/category/home</li>
+						<li>Search for "ripple"</li>
+						<li>click Extensions</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/ripplewebstore.png">
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+				</section>
+
+				<section>
+					<h2>Local SDK to Simulator/Device</h2>
+					<ul class="left fragment">
+						<li>Pro: The Real Deal</li>
+					</ul>
+					<p/>
+					<ul class="left fragment">
+						<li>Con: Slow(ish)</li>
+						<li>Con: Not Free</li>
+						<li>Con: Debugging can suck</li>
+					</ul>
+					<p/>
+					<p class="fragment">
+						TO BE CLEAR: YOU MUST ALWAYS TEST ON A REAL DEVICE
+					</p>
+				</section>
+
+				<section>
+					<h2>Demos</h2>
+					<ul>
+						<li>device api</li>
+						<li>accelerometer api</li>
+						<li>connection api</li>
+						<li>websql api</li>
+					</ul>
+				</section>
+
+				<!--
+				Some simple demos now
+
+				deviceapi
+				connection
+				accelrometer
+				-->
+
+				<section>
+					<h1>PhoneGap Build</h1>
+					<img src="img/Build-Bot.png">
+				</section>
+
+				<section>
+					<h2>The 411</h2>
+					<ul>
+						<li>Web based platform to do builds</li>
+						<li>Supports iOS, Android, Windows Phone, Blackberry, webOS, Symbian</li>
+						<li>Has an API too</li>
+						<li>NO SDKS NO COMPILING NO MESS!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>$$$</h2>
+					<img src="img/pgbplans.png">
+				</section>
+
+				<section>
+					<h2>Notes</h2>
+					<ul>
+						<li>You reference cordova.js or phonegap.js, but don't include it.</li>
+						<li>config.xml controls many things, like icons</li>
+						<li>Plugin support is limited</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>config.xml</h2>
+					<ul>
+						<li>Defines various settings</li>
+						<li>some are platform specific...</li>
+						<li>splash screen, icons, Android permission</li>
+						<li><a href="https://raw.github.com/phonegap/phonegap-start/master/www/config.xml" target="_new">Example</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+				</section>
+
+				<section>
+					<h2>Hydration</h2>
+					<img src="img/awesomesauce.jpg">
+				</section>
+
+				<section>
+					<h1>Plugins</h1>
+				</section>
+
+				<section>
+					<h2>Plugins</h2>
+					<ul>
+						<li>Written in their native language (that follows an API)</li>
+						<li>Ship with a JavaScript wrapper</li>
+						<li>Include them in your project</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Examples</h2>
+					<ul>
+						<li>TTS</li>
+						<li>Barcode scanner</li>
+						<li>SMS</li>
+						<li>Intents</li>
+						<li><strike>Child Browser</strike></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>PhoneGap Build Support</h2>
+					<ul class="fragment">
+
+						<li>ChildBrowser</li>
+						<li>Barcode Scanner</li>
+						<li>Analytics</li>
+						<li>Generic Push</li>
+						<li>Facebook Connect</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Example</h2>
+				</section>
+
+				<section>
+					<h1>Debugging</h1>
+				</section>
+
+<style>
+.kirk .reveal .state-background{
+background-image:url("img/kirk.jpg");
+background-size: 50%;
+}
+</style>
+				<section data-state="kirk">
+				</section>
+
+				<section>
+					<h2>Your options</h2>
+					<ul>
+						<li>Stick to the desktop</li>
+						<li>Remote debugging (mobile web, Chrome/Safari)</li>
+						<li>console.log - for objects, do: console.log(JSON.stringify(x))</li>
+						<li class="fragment">Yeah, seriously</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Remote Debugging</h2>
+					<p>
+						Demo
+					</p>
+				</section>
+
+				<section>
+					<h2>Where next?</h2>
+					<ul>
+						<li>Active, and helpful, Google group</li>
+						<li>Multiple books</li>
+					</ul>
+					<br/>
+					<img src="img/pgbook.jpg">
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Shake the Die!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<script type="text/javascript" src="cordova.js"></script>
+
+<script>
+document.addEventListener("deviceready", onDeviceReady, false);
+
+var lastX,lastY,lastZ;
+var moveCounter = 0;
+
+function onDeviceReady() {
+	shuffleNumber();
+	navigator.accelerometer.watchAcceleration(gotMovement, errHandler,{frequency:200});	
+}
+
+function errHandler(e) {
+	console.log("--- ERROR ---");
+	console.dir(e);
+}
+
+function gotMovement(a) {
+	if(!lastX) {
+		lastX = a.x;
+		lastY = a.y;
+		lastZ = a.z;
+		return;
+	}
+
+	var deltaX, deltaY, deltaZ;
+	deltaX = Math.abs(a.x-lastX);
+	deltaY = Math.abs(a.y-lastY);
+	deltaZ = Math.abs(a.z-lastZ);
+
+	if(deltaX + deltaY + deltaZ > 3) {
+		moveCounter++;
+	} else {
+		moveCounter = Math.max(0, --moveCounter);
+	}
+
+	if(deltaX !=0 || deltaY != 0 || deltaZ != 0) console.log(deltaX,deltaY,deltaZ,moveCounter);
+
+	if(moveCounter > 1) { shuffleNumber(); moveCounter=0; }
+
+	lastX = a.x;
+	lastY = a.y;
+	lastZ = a.z;
+
+
+}
+
+function shuffleNumber() {
+	var newNum = getRandomInt(1,6);
+	document.querySelector("#die").innerHTML = newNum;
+}
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+</script>
+<style>
+#die {
+	font-weight:bold;
+	font-family: Arial;
+	font-size: 12em;
+	width:100%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<div id="die"></div>
+
+</body>
+</html>

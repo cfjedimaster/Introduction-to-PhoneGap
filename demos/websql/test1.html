@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+<script src="../jquery.js"></script>
+<title>WebSQL Demo</title>
+<script>
+//global database object
+var db;
+
+$(document).ready(function() {
+
+	db = window.openDatabase("history", "1.0", "Pageview history", 5*1024*1024);
+
+    db.transaction(initDB,dbError,dbReady);
+
+    //Very generic handler
+	function dbError(e) {
+	    console.log("SQL ERROR");
+	    console.dir(e);
+	}
+
+	function initDB(tx) {
+	    tx.executeSql("create table if not exists pageviewhistory(id INTEGER PRIMARY KEY AUTOINCREMENT, page TEXT, time DATE)");
+	}
+
+	function dbReady() {
+		console.log("db ready");
+
+		//insert a record to record the page history
+		db.transaction(function(tx) {
+			//not complete, should include path+search
+			var thispage = window.location.href; 
+			//The getTime() converts to # of seconds since epoch - easier to deal with
+			tx.executeSql("insert into pageviewhistory(page,time) values(?,?)", [thispage,new Date().getTime()]);
+		}, dbError);
+
+		//display records
+		//NOTE IT WILL NOT - POSSIBLY - INCLUDE THE ABOVE INSERT! (And that's ok...)
+		db.readTransaction(function(tx) {
+			tx.executeSql("select page, time from pageviewhistory order by time desc", [], function(tx, results) {
+				console.dir(results.rows);
+				var s = "";
+				for(var i=0, len=results.rows.length; i<len;i++) {
+					var row = results.rows.item(i);
+					console.dir(row);
+					var d = new Date();
+					d.setTime(row.time);
+					s += "You visited page "+row.page + " at "+d.toDateString() + " "+d.toTimeString() + "<br/>";
+				}
+				$("#history").html(s);
+			});
+
+		}, dbError);
+	}	
+
+});
+</script>
+</head>
+
+<body>
+
+<h2>Your View History</h2>
+
+<div id="history"></div>
+
+</body>
+</html>

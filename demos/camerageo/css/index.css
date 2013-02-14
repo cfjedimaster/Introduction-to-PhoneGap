@@ -1,0 +1,22 @@
+button {
+    width: 80%;
+    height: 30px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#destPicture {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+img.sepia { 
+filter: sepia(100%);
+-webkit-filter: sepia(100%); -moz-filter: sepia(100%);
+-ms-filter: sepia(100%); -o-filter: sepia(100%); -webkit-filter(1); 
+}
