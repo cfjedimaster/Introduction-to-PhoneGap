@@ -1,0 +1,2 @@
+
+/Users/ray/Dropbox/Mobile/phonegap-2.6.0/lib/ios/bin/create testios3 org.camden.testios3 test3

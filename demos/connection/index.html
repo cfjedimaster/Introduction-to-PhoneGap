@@ -35,9 +35,10 @@ function init() {
 function toggleCon(e) {
 	console.log("Called",e.type);
 	if(e.type == "offline") {
-		$("#searchBtn").off("touchstart");
+		$("#searchBtn").off("touchstart").attr("disabled","disabled");
 		navigator.notification.alert("Sorry, you are offline.", function() {}, "Offline!");
 	} else {
+		$("#searchBtn").removeAttr("disabled");
 		navigator.notification.alert("Woot, you are back online.", function() {}, "Online!");
 		setupButtonHandler();
 	}

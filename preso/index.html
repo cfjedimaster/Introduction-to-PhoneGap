@@ -171,6 +171,7 @@
 					<h2>Non-Features</h2>
 					<ul>
 						<li class="fragment">UI</li>
+						<li class="fragment">Convert your CF/PHP/Perl CGI site to native</li>
 						<li class="fragment">Native Killer</li>
 					</ul>
 				</section>
@@ -183,6 +184,7 @@
 				<!-- This is the demo of the real app - UnTappd probably -->
 				<section>
 					<h1>Real World Demo</h1>
+					<aside class="notes">UnTappd</aside>
 				</section>
 
 				<section>
@@ -220,9 +222,9 @@
 					</ul>
 				</section>
 
-				<!-- This is the pgios1 demo, the simple cat one -->
 				<section>
 					<h1>Demo</h1>
+					<aside class="notes">Mainly show off the platform add support and the www copy</aside>
 				</section>
 
 				<section>
@@ -243,6 +245,7 @@
 				<!-- demo of camera app -->
 				<section>
 					<h1>Demo</h1>
+					<aside class="notes">The Camera app</aside>
 				</section>
 
 				<!--
@@ -276,11 +279,11 @@
 						<li>Con: Security restrictions</li>
 					</ul>
 				</section>
-
+<!--
 				<section>
 					<h1>Demo</h1>
 				</section>
-
+-->
 				<section>
 					<h2>Mobile Via Web</h2>
 					<ul class="left fragment">
@@ -295,11 +298,11 @@
 						<li>Con: Debugging (kinda) sucks</li>
 					</ul>
 				</section>
-
+<!--
 				<section>
 					<h1>Demo</h1>
 				</section>
-
+-->
 				<section>
 					<h2>Ripple Emulator</h2>
 					<ul class="left fragment">
@@ -330,6 +333,9 @@
 
 				<section>
 					<h1>Demo</h1>
+					<aside class="notes">
+						Any page - try my blog
+					</aside>
 				</section>
 
 				<section>
@@ -358,14 +364,6 @@
 						<li>websql api</li>
 					</ul>
 				</section>
-
-				<!--
-				Some simple demos now
-
-				deviceapi
-				connection
-				accelrometer
-				-->
 
 				<section>
 					<h1>PhoneGap Build</h1>
@@ -527,6 +525,13 @@ background-size: 50%;
 				]
 			});
 
+Reveal.addEventListener( 'slidechanged', function( event ) {
+	// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+	var notes = event.currentSlide.querySelector(".notes");
+	if(notes) {
+		console.info(notes.innerHTML.replace(/\n\s+/g,'\n'));
+	}
+} );
 		</script>
 
 	</body>
