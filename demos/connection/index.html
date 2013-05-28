@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width">
 <style>
 p {
-	background-color: #d0d0d0;
 	margin-bottom:10px;
 }
 p img {
@@ -15,7 +14,7 @@ p img {
 }
 </style>
 <script src="jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="cordova-2.2.js"></script>
+<script type="text/javascript" src="cordova-2.6.0.js"></script>
 
 <script>
 document.addEventListener("deviceready", init, false);
@@ -24,7 +23,7 @@ function init() {
 	document.addEventListener("online", toggleCon, false);
 	document.addEventListener("offline", toggleCon, false);
 
-	if(navigator.network.connection.type == Connection.NONE) {
+	if(navigator.connection.type == Connection.NONE) {
 		navigator.notification.alert("Sorry, you are offline.", function() {}, "Offline!");
 	} else {
 		setupButtonHandler();

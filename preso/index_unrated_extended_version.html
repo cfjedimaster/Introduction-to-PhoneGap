@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to PhoneGap</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+        <style>
+		img.noborder {
+			border:none !important;
+			background:transparent !important;
+			box-shadow: none !important;
+		}
+		</style>
+        
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Introduction to PhoneGap</h1>
+					<h3>Making native-only devs jealous since 2009</h3>
+					<p>
+						<small>Presented by <a href="http://www.raymondcamden.com">Raymond Camden</a> / <a href="http://twitter.com/cfjedimaster">@cfjedimaster</a></small>
+					</p>
+				</section>
+
+				<section>					
+					<h2>Who am I?</h2>
+					<ul style="float:left;width:60%">
+						<li>Raymond Camden</li>
+						<li>Developer Evangelist for Adobe</li>
+						<li>Web Standards, HTML5, JavaScript, ColdFusion</li>
+						<li>Blogging at raymondcamden.com</li>
+						<li>Tweeting at @cfjedimaster</li>
+					</ul>
+					<img src="img/ray.png" class="transparent">
+				</section>
+
+                <section>
+                    <h2>Gratuitous Pictures of My Kids </h2>
+                    <img src="img/jacob.jpg" style="width:200px">
+                    <img src="img/lynn.jpg" style="width:200px">
+                    <img src="img/noah.jpg" style="width:200px">
+                </section>
+				
+                <section>
+                    <h2>Rough Agenda</h2>
+                    <ul>
+                    <li>Writing PhoneGap Apps</li>
+                    <li>Using PhoneGap Build</li>
+                    <li>"Stuff"</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <img src="img/PhoneGapLogo.png">
+				</section>
+
+				<section>
+					<h2>Genesis</h2>
+					<ul>
+						<li>Built at an iPhoneDevCamp in 2009</li>
+						<li>Started by Nitobi</li>
+						<li>Adobe bought Nitobi (2011)</li>
+                        <li>Currently, as of this morning, version 2.7.0</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>$$$?</h2>
+					<ul>
+						<li>PhoneGap is free</li>
+						<li>No, really, free</li>
+						<li>Open Source</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Apache Cordova</h2>
+					<ul>
+						<li>cordova.apache.org</li>
+						<li>PhoneGap is Adobe's implementation</li>
+						<li class="fragment">PhoneGap == Cordova</li>
+					</ul>
+					<img src="img/cordova_logo_normal_dark.png">
+				</section>
+
+				<section>
+					<h2>Let's get techy</h2>
+					<ul>
+						<li>Creates "Hybrid" applications</li>
+						<li>Native wrapper around a web view</li>
+						<li>You code in HTML, JavaScript, and CSS</li>
+						<li>PhoneGap "bridges the gap" to native capabilities</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>About that gap...</h2>
+					<ul>
+						<li>PhoneGap tries to follow standards</li>
+						<li>When it doesn't need to do anything, it doesn't</li>
+						<li>In the perfect world, PhoneGap won't exist</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Supported Platforms</h2>
+					<ul>
+						<li>iOS</li>
+						<li>Android</li>
+						<li>Windows Phone 7/8 (+ Windows 8)</li>
+						<li>BlackBerry</li>
+						<li>Bada</li>
+						<li>WebOS</li>
+						<li>Symbian</li>
+					</ul>
+					<br/><br/>
+					<p>
+						<a href="http://phonegap.com/about/feature" target="_new">http://phonegap.com/about/feature</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Features</h2>
+					<ul>
+						<li>Accelerometer - when the device moves</li>
+						<li>Camera - pictures of your cat</li>
+						<li>Capture - audio, video, stills of your cat</li>
+						<li>Compass - for when you're lost in the woods</li>
+						<li>Connection - type of connection</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Features</h2>
+					<ul>
+						<li>Contacts - find and create new friends</li>
+						<li>Device - device and OS version metadata</li>
+						<li>Events - various app/hardware related events</li>
+						<li>File - native file system access (+ upload)</li>
+						<li>Geolocation - for when you're lost in the woods</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Features</h2>
+					<ul>
+						<li>Globalization - date/number/currency formatting</li>
+						<li>Media - related to audio playback (supports record as well)</li>
+						<li>Notification - visual, audible, and tactile notifications</li>
+						<li>Splashscreen - for your splash screen needs</li>
+						<li>Storage - Mini database</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Unofficial Features</h2>
+					<ul>
+						<li class="fragment">Use any of the 10 million JavaScript libraries</li>
+						<li class="fragment">Use any of the 10 million APIs</li>
+						<li class="fragment">Deploy to app store</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Non-Features</h2>
+					<ul>
+						<li class="fragment">UI</li>
+						<li class="fragment">Convert your ColdFusion/PHP/Perl CGI site to native</li>
+						<li class="fragment">Native Killer</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Who is using PhoneGap?</h2>
+					<img src="img/pgapps.png">
+				</section>
+
+				<!-- This is the demo of the real app - UnTappd probably -->
+				<section>
+					<h1>Real World Demo</h1>
+					<aside class="notes">UnTappd</aside>
+				</section>
+
+				<section>
+					<h2>How is it done?</h2>
+					<ul>
+						<li>Going from HTML to Binary</li>
+						<li>Making use of the awesome</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>How is it done? (Option 1)</h2>
+					<ul>
+						<li>Get SDK(s) + Cordova download</li>
+						<li>Command line init</li>
+						<li>Switch to the editor for that platform</li>
+						<li>Edit HTML, simulate, build</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+				</section>
+
+				<section>
+					<h2>How is it done? (Option 2)</h2>
+					<ul>
+						<li>cordova-client</li>
+                        <li>Node tool</li>
+						<li>"Meta Tool"</li>
+						<li>Still requires SDKs</li>
+						<li>All command line</li>
+						<li><strike>(Not official!)</strike></li>
+						<li>Added to PhoneGap 2.4.0</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+					<aside class="notes">Mainly show off the platform add support and the www copy</aside>
+				</section>
+
+				<section>
+					<h2>How is it done? (Option 3)</h2>
+					<img src="img/Build-Bot.png">
+				</section>
+
+				<section>
+					<h2>How do we do the awesome?</h2>
+					<ul>
+						<li>Include cordova-VERSION.js</li>
+						<li>Only does what it has to...</li>
+						<li>config.xml (but we'll worry about that later)</li>
+						<li>plugins (but we'll worry about that later)</li>
+					</ul>
+				</section>
+
+				<!-- demo of camera app -->
+				<section>
+					<h1>Demo</h1>
+                    <p><i>Ray, show the camera app...</i></p>
+				</section>
+
+				<!--
+				other demos?
+				contacts
+				compass
+				-->
+
+				<section>
+					<h2>Real World Building</h2>
+					<ul class="fragment">
+						<li>Desktop Browser</li>
+						<li>Mobile via Web</li>
+						<li>Ripple Emulator</li>
+						<li>Local SDK to Simulator/Device</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Desktop Browser</h2>
+					<ul class="left fragment">
+						<li>Pro: Super Fast</li>
+						<li>Pro: No setup</li>
+						<li>Pro: Debugging Rocks</li>
+					</ul>
+					<p/>
+					<ul class="left fragment">
+						<li>Con: UI isn't right</li>
+						<li>Con: UX isn't right</li>
+						<li>Con: Features missing</li>
+						<li>Con: Security restrictions</li>
+					</ul>
+				</section>
+<!--
+				<section>
+					<h1>Demo</h1>
+				</section>
+-->
+				<section>
+					<h2>Mobile Via Web</h2>
+					<ul class="left fragment">
+						<li>Pro: Kinda Fast</li>
+						<li>Pro: Minimal setup</li>
+						<li>Pro: UI and UX testing</li>
+					</ul>
+					<p/>
+					<ul class="left fragment">
+						<li>Con: Features missing</li>
+						<li>Con: Security restrictions</li>
+						<li>Con: Debugging (kinda) sucks</li>
+					</ul>
+				</section>
+<!--
+				<section>
+					<h1>Demo</h1>
+				</section>
+-->
+				<section>
+					<h2>Ripple Emulator</h2>
+					<ul class="left fragment">
+						<li>Pro: Fast</li>
+						<li>Pro: Similar UI</li>
+						<li>Pro: Free</li>
+						<li>Pro: Security restrictions gone</li>
+					</ul>
+					<p/>
+					<ul class="left fragment">
+						<li>Con: Doesn't support 100% of the PhoneGap APIs</li>
+						<li>Con: Still not on the device</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>To Install</h2>
+					<ul>
+						<li>Go to the Chrome Web Store: https://chrome.google.com/webstore/category/home</li>
+						<li>Search for "ripple"</li>
+						<li>click Extensions</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/ripplewebstore.png">
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+                    <p><i>Ray, hit any page, like my blog</i></p>
+				</section>
+
+				<section>
+					<h2>Local SDK to Simulator/Device</h2>
+					<ul class="left fragment">
+						<li>Pro: The Real Deal</li>
+					</ul>
+					<p/>
+					<ul class="left fragment">
+						<li>Con: Slow(ish)</li>
+						<li>Con: Not Free</li>
+						<li>Con: Debugging can suck</li>
+					</ul>
+					<p/>
+					<p class="fragment">
+						TO BE CLEAR: YOU MUST ALWAYS TEST ON A REAL DEVICE
+					</p>
+				</section>
+
+				<section>
+					<h2>Demos</h2>
+					<ul>
+						<li>device api</li>
+						<li>accelerometer api</li>
+						<li>connection api</li>
+                        <li>coldfusion</li>
+                        <li>color thief</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>PhoneGap Build</h1>
+					<img src="img/Build-Bot.png">
+				</section>
+
+				<section>
+					<h2>The 411</h2>
+					<ul>
+						<li>Web based platform to do builds</li>
+						<li>Supports iOS, Android, Windows Phone, Blackberry, webOS, Symbian</li>
+						<li>Has an API too</li>
+						<li>NO SDKS NO COMPILING NO MESS!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>$$$</h2>
+					<img src="img/pgbplans.png">
+				</section>
+
+				<section>
+					<h1>Demo</h1>
+				</section>
+				
+                <section>
+					<h2>What You Will Screw Up!</h2>
+                    <p>
+                        You reference cordova.js or phonegap.js in your HTML, but don't include it.
+                    </p>
+				</section>
+
+                <section>
+                    <h2>config.xml</h2>
+                    <ul>
+                        <li>Used to - wait for it - configure stuff</li>
+						<li>Based on a W3C Spec (<a href="http://www.w3.org/TR/widgets/" target="_blank">Widget Spec</a>)</li>
+						<li>Must be at the top level (same as index.html)</li>
+						<li>No validator<sup>*</sup> - so get it right</li>
+					</ul>
+
+                </section>
+
+				<section>
+					<h2>config.xml - validation</h2>
+					<img src="img/badconfig.png" class="fragment">						
+					<p class="fragment">
+						Ripple will do some validation (missing top level widget, bad xml)
+					</p>
+				</section>
+                
+                <section>
+                <h2>Ripple Demo</h2>
+                </section>
+                
+
+				<section>
+					<h2>config.xml - basics</h2>
+					<pre><code contenteditable>
+&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.example"
+        versionCode="10" 
+        version   = "1.0.0"&gt;
+&lt;/widget&gt;
+					</code></pre>
+						
+					<ul>
+						<li>id is reverse-domain style</li>
+						<li>versionCode is Android only (<a href="http://developer.android.com/tools/publishing/versioning.html" target="_blank">Doc</a>)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>config.xml - basics (2)</h2>
+					<pre><code contenteditable>
+&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.example"
+        versionCode="10" 
+        version   = "1.0.0"&gt;
+	&lt;name&gt;My Cool App&lt;/name&gt;
+	&lt;description&gt;Like Angry Birds, but with Ninjas&lt;/description&gt;
+&lt;/widget&gt;
+					</code></pre>
+				</section>	
+				
+				<section>
+					<h2>config.xml - &lt;preference&gt;</h2>
+					<ul>
+						<li>All use a name/value syntax</li>
+						<li>&lt;preference name="something" value="foo"&gt;</li>
+						<li>Fall into cross platform, Android, iOS, and Blackberry categories</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>config.xml - &lt;preference&gt; (2)</h2>
+					<ul>
+						<li>phonegap-version: From 1.1.0 to 2.5.0 (default)</li>
+						<li>fullscreen: False is default, supports iOS and Android</li>
+						<li>webviewbounce: True is default, iOS only</li>
+						<li>detect-data-types: Should text in the form of phone numbers, dates, be recognized. iOS only, defaults to true</li>
+						<li>android-min(max)SdkVersion: Min (and max) SDK versions, Android only</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Demo</h2>
+                    <p>
+                    Show fullscreen and nonfullscreen
+                    </p>
+				</section>
+			
+				<section>
+					<h2>config.xml - icons</h2>
+					<ul>
+						<li>You can specify a default icon, but must be in your root folder and must be named icon.png</li>
+						<li>You can then specify platform/type icons</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>config.xml - icons (Example)</h2>
+					<pre><code contenteditable>
+&lt;!-- default fallback --&gt;
+&lt;icon src="icon.png" /&gt;
+&lt;!-- classic --&gt;
+&lt;icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" /&gt;
+&lt;!-- retina --&gt;
+&lt;icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" /&gt;
+&lt;!-- ipad --&gt;
+&lt;icon src="icons/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" /&gt;
+&lt;icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" /&gt;
+&lt;icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" /&gt;
+&lt;icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" /&gt;
+&lt;icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" /&gt;
+&lt;icon src="icons/winphone/icon.png" gap:platform="winphone" /&gt;
+&lt;!-- This one is for the tile --&gt;
+&lt;icon src="icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" /&gt;
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Demo</h2>
+                    <p>Show ICON Test</p>
+				</section>
+
+				<section>
+					<h2>config.xml - splashscreen</h2>
+					<ul>
+						<li>Like with icon, can support fallback</li>
+						<li>Like with icon, can support platform/type</li>
+					</ul>
+				</section>				
+
+				<section>
+					<h2>config.xml - splashscreen (Example)</h2>
+					<pre><code contenteditable>
+&lt;!-- default fallback --&gt;
+&lt;gap:splash src="splash.png" /&gt;
+&lt;gap:splash src="splash/ios/Default.png" width="320" height="480" /&gt;
+&lt;gap:splash src="splash/ios/Default_at_2x.png" width="640" height="960" /&gt;
+&lt;gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" /&gt;
+&lt;gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" /&gt;
+&lt;gap:splash src="splash/winphone/splash.jpg" gap:platform="winphone" /&gt;
+					</code></pre>
+				</section>				
+
+				<section>
+					<h2>Demo</h2>
+                    <p>
+                        Show splashscreen and splashscreenlonger
+                    </p>
+				</section>
+				
+				<section>
+					<h2>config.xml - features</h2>
+					<ul>
+						<li>Android only</li>
+						<li>Specifies what permissions your application needs</li>
+						<li>Minimum permissions required is INTERNET</li>
+						<li><strong>Don't ignore this!</strong></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>config.xml - features (Example)</h2>
+					<pre><code contenteditable>
+&lt;!-- min --&gt;
+&lt;preference name="permissions" value="none"/&gt;
+
+&lt;!-- to enable individual permissions use the following examples --&gt;
+&lt;feature name="http://api.phonegap.com/1.0/battery"/&gt;
+&lt;feature name="http://api.phonegap.com/1.0/camera"/&gt;
+&lt;feature name="http://api.phonegap.com/1.0/contacts"/&gt;
+&lt;feature name="http://api.phonegap.com/1.0/file"/&gt;
+&lt;feature name="http://api.phonegap.com/1.0/geolocation"/&gt;
+&lt;feature name="http://api.phonegap.com/1.0/media"/&gt;
+&lt;feature name="http://api.phonegap.com/1.0/network"/&gt;
+&lt;feature name="http://api.phonegap.com/1.0/notification"/&gt;
+					</code></pre>
+				</section>
+
+				<section>
+                    
+                    <section>
+					<h2>Demo</h2>
+                    <p>
+                    Show ugly Android demo
+                    </p>
+                    </section>
+                    
+                    <section>
+                        <img src="img/androidmeh.png">
+                    </section>
+                    <section>
+                        <img src="img/androidbetter.png">
+                    </section>
+                    <section>
+                        <img src="img/androidbetter2.png">
+                    </section>
+
+                </section>
+				
+				<section>
+					<h2>config.xml - Access</h2>
+					<ul>
+						<li>If blank, nothing remote is allowed</li>
+						<li>Can specify a domain and optionally if subdomains are allowed</li>
+						<li>You can also prevent remote resources from taking over the complete app</li>
+						<li class="fragment">Defaults are .... tricky</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>config.xml - Access</h2>
+					<ul>
+						<li>What happens when you click a link?</li>
+						<li class="fragment">On Android, if whitelisted, takes over webview, otherwise opens a browser</li>
+						<li class="fragment">On iOS, if whitelisted, a regular link takes over webview, one with target="_blank" opens in browser. If NOT whitelisted, it is blocked</li>
+						<li class="fragment">For more info: <a href="https://build.phonegap.com/blog/access-tags" target="_blank">https://build.phonegap.com/blog/access-tags</a></li>
+						<li class="fragment">Remember the InAppBrowser feature</li>
+					</ul>
+				</section>                
+
+                <section>
+                    <h1>ConfiGAP</h1>
+                    <img src="img/configap.png"><br/>
+                    http://aj-software.com/configap/
+                </section>
+                
+                <section>
+					<h2>Hydration</h2>
+					<img src="img/awesomesauce.jpg">
+				</section>
+
+                <section>
+					<h2>Hydration</h2>
+					<ul>
+						<li class="fragment">Improves compilation speed</li>
+						<li class="fragment">Creates an automatic updater</li>
+						<li class="fragment">Coolest thing ever invented anywhere (honest!)</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Hydration</h2>
+                    <img src="img/hydration_settings.png">
+				</section>
+
+				<section>
+					<h2>Hydration</h2>
+				    <img src="img/hydration1.png">
+				</section>
+
+				<section>
+					<h2>Hydration</h2>
+                    <img src="img/hydration2.png">
+				</section>
+
+				<section>
+					<h2>Demo</h2>
+				</section>
+
+				<section>
+					<h2>API</h2>
+					<ul>
+						<li>Full API. Everything you can do on the site, you can do here</li>
+						<li>Authentication over Basic Authentication or via token authentication</li>
+						<li>All responses are JSON strings or binary data</li>
+						<li>JSON/P supported as well</li>
+						<li>Attempts to follow HATEOAS (Hypermedia as the Engine of Application State)</li>
+					</ul>
+                    <img src="img/MCP.png" style="width:350px" class="fragment">
+				</section>
+
+				<section>
+					<h2>API - Libraries</h2>
+					<ul>
+						<li><strong>Node</strong> - https://github.com/mwbrooks/phonegap-build-api-js</li>
+						<li><strong>Node</strong> - Mine - Because - http://www.raymondcamden.com/index.cfm/2012/8/31/A-PhoneGap-Build-API-wrapper-in-Node</li>
+						<li><strong>PHP</strong> - https://github.com/avtehnik/phonegap-build-php-api</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Demo</h2>
+					<div class="content"></div>
+				</section>
+
+				<section>
+					<h2>Tooling</h2>
+					<ul>
+						<li>Brackets + Edge Code</li>
+						<li>Dreamweaver</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Demo</h2>
+				</section>
+
+				<section>
+					<h2>autobuild.monkeh.me</h2>
+					<ul>
+						<li>Free service</li>
+						<li>Add a web service hook to Git</li>
+						<li>When you commit, it auto updates</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Demo</h2>
+				</section>
+                
+				<section>
+					<h1>Plugins</h1>
+				</section>
+
+                <section>
+                    <img src="img/brokenplugin.jpg" style="width:400px">
+                </section>
+
+                <section>
+					<h2>Plugins</h2>
+					<ul>
+						<li>Written in their native language (that follows an API)</li>
+						<li>Ship with a JavaScript wrapper</li>
+						<li>Include them in your project</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Examples</h2>
+					<ul>
+						<li>TTS</li>
+						<li>Barcode scanner</li>
+						<li>SMS</li>
+						<li>Intents</li>
+                        <li>Push Notifications</li>
+						<li><strike>Child Browser</strike></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>PhoneGap Build Support</h2>
+					<ul class="fragment">
+
+						<li>ChildBrowser (but don't use it)</li>
+						<li>Barcode Scanner</li>
+						<li>Analytics</li>
+						<li>Generic Push</li>
+						<li>Facebook Connect</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Example</h2>
+				</section>
+
+				<section>
+					<h1>Debugging</h1>
+				</section>
+
+<style>
+.kirk .reveal .state-background{
+background-image:url("img/kirk.jpg");
+background-size: 50%;
+}
+</style>
+				<section data-state="kirk">
+				</section>
+
+				<section>
+					<h2>Your options</h2>
+					<ul>
+						<li>Stick to the desktop</li>
+						<li>Remote debugging (mobile web, Chrome/Safari)</li>
+						<li>console.log - for objects, do: console.log(JSON.stringify(x))</li>
+						<li class="fragment">Yeah, seriously</li>
+					</ul>
+				</section>
+
+                <section>
+                    <h2>Desktop?</h2>
+                    <ul>
+                    <li class="fragment">Remember - you can't <strong>only</strong> use this</li>
+                    <li class="fragment">Dev Tools are Amazing.</li>
+                    <li class="fragment">Sync to Mobile tools.</li>
+                    </ul>
+                </section>
+				
+                <section>
+                    <h1>Warning - Marketing Ahead</h1>
+                </section>
+                
+                <section>
+                    <h2>Edge Inspect</h2>
+                    <img src="img/inspect.svg">
+                </section>
+
+				<section>
+					<h2>Edge Inspect - Components</h2>
+						<ul>
+							<li>An application (Windows/OSX)</li>
+							<li>A Chrome plugin</li>
+							<li>A mobile app (Android/iOS)</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Edge Inspect - Features</h2>
+                    <ul>
+                        <li class="fragment">Synchronized Browsing</li>
+                        <li class="fragment">Remote Inspection</li>
+                        <li class="fragment">Screenshots</li>
+                    </ul>
+				</section>
+
+                <section>
+                    <h2>Demo</h2>
+                </section>
+                
+                <section>
+                    <h2>Remote Debugging</h2>
+                    <ul>
+                    <li>Browser to Device</li>
+                    <li>iOS and Android only</li>
+                    </ul>
+                </section>
+                
+                
+                <section>
+					<h2>Remote Debugging</h2>
+					<p>
+						iOS Demo
+					</p>
+				</section>
+
+                <section>
+                    <h2>Remote Debugging w/ Chrome+Android</h2>
+                    <img src="img/becausegoogle.jpg" class="fragment">
+                </section>
+
+                <section>
+                    <h2>Remote Debugging w/ Chrome+Android</h2>
+                    <ul>
+                    <li>This is NOT the Android browser</li>
+                    <li>This is Chrome only</li>
+                    <li>Safari is 59.42%, Android is 22.89%, Chrome is 2.63%</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Details</h2>
+                    <ul>
+                    <li>Requires the Android SDK</li>
+                    <li>Device needs USB Debugging enabled</li>
+                    <li>Device needs USB Web Debugging (Chrome Setting)</li>
+                    <li class="fragment">But wait - there's more!</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Run this...</h2>
+                    <pre><code>
+adb forward tcp:9222 localabstract:chrome_devtools_remote
+                    </code></pre>
+                </section>
+                
+                <section>
+                    <h2>The Final Step</h2>
+                    <ul>
+                    <li>Open Chrome on Desktop</li>
+                    <li>Navigate to localhost:9222</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h1>UI</h1>
+                    <img src="img/poorwebbrowserui.gif">
+                </section>
+
+                <section>
+                    <h2>Many Options</h2>
+                    <ul>
+                        <li>Pick a framework: jQuery Mobile, Bootstrap, Topcoat</li>
+                        <li>"Do it yourself"</li>
+                        <li class="fragment">As of this morning, Pure (http://purecss.io/)</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>jQuery Mobile</h2>
+                    <ul>
+                    <li>Takes a "I'll just make everything pretty for you" approach</li>
+                    <li>Multiple UI widgets (responsive tables, panels, custom drop downs, etc)</li>
+                    <li>Has a standard "look" to it</li>
+                    <li>Very easy to pick up - works with HTML, not JavaScript</li>
+                    <li>http://jquerymobile.com</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>jQuery Mobile Demo</h2>
+                </section>
+                
+                <section>
+                    <img src="img/jqmbook.jpg" class="noborder">
+                </section>
+                
+                <section>
+                    <h2>Bootstrap</h2>
+                    <ul>
+                    <li>Responsive layout</li>
+                    <li>http://twitter.github.io/bootstrap/</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Bootstrap Demo</h2>
+                </section>
+                
+                <section>
+                    <h2>Topcoat</h2>
+                    <ul>
+                    <li>"CSS for clean and fast web apps"</li>
+                    <li>One file for desktop, one for mobile</li>
+                    <li>Adobe open source project</li>
+                    <li>http://topcoat.io/</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Topcoat Demo</h2>
+                </section>
+                
+                <section>
+                    <h1>Performance!</h1>
+                </section>
+
+                <section>
+                    <h2>Some tips</h2>
+                    <ul>
+                        <li class="fragment">click versus touch</li>
+                        <li class="fragment">Remote data via AJAX isn't magically slender</li>
+                        <li class="fragment">Perception is everything (demo)</li>
+                        <li class="fragment">Cache static data (demo)</li>
+                        <li class="fragment">Cache dynamic data</li>
+                    </ul>
+                </section>                
+
+                <section>
+                    <h2>Some more tips</h2>
+                    <ul>
+                        <li class="fragment">Check your JavaScript framework</li>
+                        <li class="fragment">Learn CSS performance (hardware acceleration)</li>
+                        <li class="fragment">Learn from the past</li>
+                    </ul>
+                </section>                
+
+                <!--
+0) click vs touch (300 ms)
+1) using ajax to load html and dropping it on the page (dont generate the ui on the server)
+2) don't wait for the data to display the UI - so show something (like empty ui) and load data into it
+3) cache static data (localstorage, websql, file system)
+4) cache data even if not static
+5) look at your JS framework and check *those* things, jquery for ex has many performance tips related to selectors. must templating languages let you precompile templates. btw, do you need that library?
+6) css transitions that use hardware acceleration, basically css best practices
+        -->        
+                <section>
+                    <h2>Additional Performance Resources</h2>
+                    <ul>
+                        <li>Christophe Coenraets: http://coenraets.org/blog/2013/05/top-10-performance-techniques-for-phonegap-applications/</li>
+                        <li>Brock Whitten: http://sintaxi.com/you-half-assed-it</li>
+                    </ul>
+                </section>
+                
+                <section>
+                
+                    <section>
+                        <h1>If we have time...</h1>
+                    </section>
+
+                    <section>
+                        <h2>Converting a Dynamic Site to PhoneGap</h2>
+                        <ul>
+                        <li class="fragment">To be clear, you can't run PHP / CF / ASP / Ruby / Assembly / Etc on a device</li>
+                        <li class="fragment">Your backend server turns into an API provider (JIJO)</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h2>Single Page Architecture</h2>
+                        <ul>
+                        <li class="fragment">What: A web site/app that is contained within one core page - additional content (data/text/etc) loaded into the DOM</li>
+                        <li class="fragment">Why: deviceready is needed for every new HTML reload</li>
+                        <li class="fragment">How: Numerous ways!</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h2>SPA Examples</h2>
+                        <ul>
+                            <li>jQuery Mobile</li>
+                            <li>Backbone</li>
+                            <li>Angular</li>
+                            <li class="fragment">and about 5000 other JS frameworks</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h2>Think Different</h2>
+                        <p>
+                        You're building a web <strong>app</strong>, not a web page.
+                        </p>
+                    </section>
+                </section>
+                
+                
+                <section>
+					<h2>Where next?</h2>
+					<ul>
+						<li>Active, and helpful, Google group</li>
+						<li>Multiple books</li>
+					</ul>
+					<br/>
+					<img src="img/pgbook.jpg">
+				</section>
+				
+				<section>
+					<h1>Any Questions?</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+<style>
+.adobe {
+padding-left: 10px; 
+padding-top: 40px; 
+padding-bottom: 10px; 
+position: absolute; 
+right: 80px; 
+top: 0px; 
+background-color: #F00; 
+width: 40px; 
+height: 40px;
+}
+</style>
+<div class="adobe">
+	<img src="img/adobe_logo.png" width="30" height="40">
+</div>
+        
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+Reveal.addEventListener( 'slidechanged', function( event ) {
+	// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+	var notes = event.currentSlide.querySelector(".notes");
+	if(notes) {
+		console.info(notes.innerHTML.replace(/\n\s+/g,'\n'));
+	}
+} );
+		</script>
+
+	</body>
+</html>

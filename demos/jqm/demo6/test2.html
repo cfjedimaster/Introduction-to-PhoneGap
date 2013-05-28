@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form - Checkboxes, Radio</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="intro">
+
+	<div data-role="header">
+	<h1>Feedback Form</h1>
+	</div>
+
+	<div data-role="content">
+	
+		<form action="echo.cfm" method="post">
+
+			<!-- Ray stole this from the docs -->
+			<div data-role="fieldcontain">
+			    <fieldset data-role="controlgroup">
+			    	<legend>Choose a pet:</legend>
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+			         	<label for="radio-choice-1">Cat</label>
+			
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+			         	<label for="radio-choice-2">Dog</label>
+			
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+			         	<label for="radio-choice-3">Hamster</label>
+			
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4"  />
+			         	<label for="radio-choice-4">Lizard</label>
+			    </fieldset>
+			</div>
+
+			<div data-role="fieldcontain">
+			    <fieldset data-role="controlgroup" data-type="horizontal">
+			    	<legend>Choose a pet:</legend>
+			         	<input type="radio" name="radio-choice-1a" id="radio-choice-1a" value="choice-1" checked="checked" />
+			         	<label for="radio-choice-1a">Cat</label>
+			
+			         	<input type="radio" name="radio-choice-1a" id="radio-choice-2a" value="choice-2"  />
+			         	<label for="radio-choice-2a">Dog</label>
+			
+			         	<input type="radio" name="radio-choice-1a" id="radio-choice-3a" value="choice-3"  />
+			         	<label for="radio-choice-3a">Hamster</label>
+			
+			    </fieldset>
+			</div>
+
+			<div data-role="fieldcontain">
+			    <fieldset data-role="controlgroup">
+			    	<legend>Choose a pet:</legend>
+			         	<input type="checkbox" name="cb-choice-1" id="cb-choice-1" value="choice-1" checked="checked" />
+			         	<label for="cb-choice-1">Cat</label>
+			
+			         	<input type="checkbox" name="cb-choice-1" id="cb-choice-2" value="choice-2"  />
+			         	<label for="cb-choice-2">Dog</label>
+			
+			         	<input type="checkbox" name="cb-choice-1" id="cb-choice-3" value="choice-3"  />
+			         	<label for="cb-choice-3">Hamster</label>
+			
+			         	<input type="checkbox" name="cb-choice-1" id="cb-choice-4" value="choice-4"  />
+			         	<label for="cb-choice-4">Lizard</label>
+			    </fieldset>
+			</div>
+
+			<div data-role="fieldcontain">
+			    <fieldset data-role="controlgroup" data-type="horizontal">
+			    	<legend>Choose a pet:</legend>
+			         	<input type="checkbox" name="cb-choice-1a" id="cb-choice-1a" value="choice-1" checked="checked" />
+			         	<label for="cb-choice-1a">Cat</label>
+			
+			         	<input type="checkbox" name="cb-choice-1a" id="cb-choice-2a" value="choice-2"  />
+			         	<label for="cb-choice-2a">Dog</label>
+			
+			         	<input type="checkbox" name="cb-choice-1a" id="cb-choice-3a" value="choice-3"  />
+			         	<label for="cb-choice-3a">Hamster</label>
+			
+			    </fieldset>
+			</div>
+
+			<p>
+				<input type="submit" value="Send Comments">
+			</p>
+			
+		</form>
+	</div>
+
+	<div data-role="footer">
+	<h4>Copyright 2011.</h4>
+	</div>
+
+</div>
+
+
+
+</body>
+</html>

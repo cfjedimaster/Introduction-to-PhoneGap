@@ -1,0 +1,16 @@
+A look at UI.
+A look at using CF remotely.
+
+
+performance:
+0) click vs touch (300 ms)
+1) using ajax to load html and dropping it on the page (dont generate the ui on the server)
+2) don't wait for the data to display the UI - so show something (like empty ui) and load data into it
+3) cache static data (localstorage, websql, file system)
+4) cache data even if not static
+5) look at your JS framework and check *those* things, jquery for ex has many performance tips related to selectors. must templating languages let you precompile templates. btw, do you need that library?
+6) css transitions that use hardware acceleration, basically css best practices
+
+
+Maybe download my CF->PG app.
+Single Page Architecture example.

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form - Select</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="intro">
+
+	<div data-role="header">
+	<h1>Feedback Form</h1>
+	</div>
+
+	<div data-role="content">
+	
+		<form action="echo.cfm" method="post">
+
+			<div data-role="fieldcontain">
+				<label for="language" class="select">Choose Language:</label>
+				<select name="language" id="language">
+					<option value="cf">ColdFusion</option>
+					<option value="python">Python</option>
+					<option value="cf2">ColdFusion Again</option>
+					<option value="notphp">Anything but PHP</option>
+				</select>
+			</div>
+
+			<p>
+				<input type="submit" value="Send Comments">
+			</p>
+			
+		</form>
+	</div>
+
+	<div data-role="footer">
+	<h4>Copyright 2011.</h4>
+	</div>
+
+</div>
+
+
+
+</body>
+</html>

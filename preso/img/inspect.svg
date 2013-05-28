@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="240px" height="234.005px" viewBox="0 0 240 234.005" enable-background="new 0 0 240 234.005" xml:space="preserve">
+<rect fill-rule="evenodd" clip-rule="evenodd" fill="#512F1E" width="240" height="234"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="124" x2="240.0005" y2="124">
+	<stop  offset="0" style="stop-color:#F8AA1B;stop-opacity:0.1"/>
+	<stop  offset="0.501" style="stop-color:#EFA41D"/>
+	<stop  offset="1" style="stop-color:#F8AA1B;stop-opacity:0.1"/>
+</linearGradient>
+<path opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_1_)" d="M0,225h240v6H0V225z M0,199h240v6H0V199z
+	 M0,147h240v6H0V147z M0,121h240v6H0V121z M0,95h240v6H0V95z M0,69h240v6H0V69z M0,43h240v6H0V43z M0,17h240v6H0V17z M0,173h240v6H0
+	V173z"/>
+<path opacity="0.18" fill-rule="evenodd" clip-rule="evenodd" fill="#F8AA1B" d="M0,186h240v6H0V186z M0,212h240v6H0V212z M0,134
+	h240v6H0V134z M0,160h240v6H0V160z M0,108h240v6H0V108z M0,82h240v6H0V82z M0,56h240v6H0V56z M0,30h240v6H0V30z M0,4h240v6H0V4z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#F8AA1B" d="M92,164.709c0,0.971-0.16,1.291-1.29,1.291H75.29
+	c-0.97,0-1.29-0.48-1.29-1.291V59.29c0-0.97,0.48-1.29,1.29-1.29h15.58c0.81,0,1.13,0.32,1.13,1.13V164.709z M112,102.831
+	c0-0.971,0-4.351-0.48-9.98c0-0.65-0.24-0.81,0.4-1.13c8.21-3.06,19.31-6.44,30.42-6.44c13.692,0,28.661,5.31,28.661,28.82v50.609
+	c0,0.971-0.318,1.291-1.129,1.291h-15.58c-0.971,0-1.291-0.48-1.291-1.291v-49.33c0-9.33-3.85-14.479-13.51-14.479
+	c-4.19,0-7.591,0.8-10.49,1.771v62.199c0,0.65-0.319,1.131-0.97,1.131h-14.9c-0.81,0-1.13-0.32-1.13-1.131V102.831z"/>
+</svg>

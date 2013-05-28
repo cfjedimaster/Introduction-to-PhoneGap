@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "org.camden.splashtest2"
+        versionCode="10" 
+        version   = "1.0.0">
+
+    <name>Splash Test Longer</name>
+
+    <description>
+		Test the splash (longer)!
+    </description>
+
+	<gap:splash src="splash.png" />
+	<gap:splash src="retina.png" gap:platform="ios" width="640" height="1136" />
+	<preference name="auto-hide-splash-screen" value="false" />	
+</widget>

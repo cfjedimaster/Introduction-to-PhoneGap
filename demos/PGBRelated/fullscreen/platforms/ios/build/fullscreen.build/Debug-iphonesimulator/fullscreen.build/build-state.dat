@@ -1,0 +1,688 @@
+Tfullscreen
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Info.plist" fullscreen/fullscreen-Info.plist
+cPhaseScriptExecution "Copy www directory" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Script-304B58A110DAC018002A0835.sh"
+cCpResource fullscreen/config.xml build/fullscreen.app/config.xml
+cCpResource fullscreen/Resources/icons/icon.png build/fullscreen.app/icon.png
+cCpResource fullscreen/Resources/icons/icon-72.png build/fullscreen.app/icon-72.png
+cCpResource fullscreen/Resources/icons/icon@2x.png build/fullscreen.app/icon@2x.png
+cCpResource fullscreen/Resources/Capture.bundle build/fullscreen.app/Capture.bundle
+cCopyStringsFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/en.lproj/Localizable.strings" fullscreen/Resources/en.lproj/Localizable.strings
+cCopyStringsFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/es.lproj/Localizable.strings" fullscreen/Resources/es.lproj/Localizable.strings
+cCompileXIB "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.xib"
+cCopyStringsFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/de.lproj/Localizable.strings" fullscreen/Resources/de.lproj/Localizable.strings
+cCopyStringsFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/se.lproj/Localizable.strings" fullscreen/Resources/se.lproj/Localizable.strings
+cCpResource fullscreen/Resources/splash/Default-Landscape@2x~ipad.png build/fullscreen.app/Default-Landscape@2x~ipad.png
+cCpResource fullscreen/Resources/splash/Default-Landscape~ipad.png build/fullscreen.app/Default-Landscape~ipad.png
+cCpResource fullscreen/Resources/splash/Default-Portrait@2x~ipad.png build/fullscreen.app/Default-Portrait@2x~ipad.png
+cCpResource fullscreen/Resources/splash/Default-Portrait~ipad.png build/fullscreen.app/Default-Portrait~ipad.png
+cCpResource fullscreen/Resources/splash/Default@2x~iphone.png build/fullscreen.app/Default@2x~iphone.png
+cCpResource fullscreen/Resources/splash/Default-568h@2x~iphone.png build/fullscreen.app/Default-568h@2x~iphone.png
+cCpResource fullscreen/Resources/splash/Default~iphone.png build/fullscreen.app/Default~iphone.png
+cCpResource fullscreen/Resources/icons/icon-72@2x.png build/fullscreen.app/icon-72@2x.png
+cProcessPCH /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/fullscreen-Prefix-graghzoxyuaubiaikjumbfhzpefw/fullscreen-Prefix.pch.pth fullscreen/fullscreen-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/main.o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/MainViewController.o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/AppDelegate.o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/AppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/fullscreen" normal i386
+cGenerateDSYMFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app.dSYM" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/fullscreen"
+cTouch "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
+c00000000516CA5FA0000000000000110
+t1366074874
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000005147369E00000000001EB540
+t1363621534
+s2012480
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c000000005147369E00000000000C1030
+t1363621534
+s790576
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
+c000000005147369E0000000000193640
+t1363621534
+s1652288
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c000000005147369E00000000000226E0
+t1363621534
+s141024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000005147369E00000000003D4DF0
+t1363621534
+s4017648
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000005147369E0000000000215DB0
+t1363621534
+s2186672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000005147369E0000000000228FE0
+t1363621534
+s2265056
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000005147369E000000000009C590
+t1363621534
+s640400
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000005147369E0000000000085620
+t1363621534
+s546336
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000005147369F00000000003DDFA0
+t1363621535
+s4054944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c00000000514736A000000000002DBA50
+t1363621536
+s2996816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c00000000514736A000000000000BCC20
+t1363621536
+s773152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000514736A000000000001D5750
+t1363621536
+s1922896
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c00000000514736A1000000000006CC50
+t1363621537
+s445520
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000514736A20000000000AB6230
+t1363621538
+s11231792
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app.dSYM
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Capture.bundle
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default-568h@2x~iphone.png
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default-Landscape@2x~ipad.png
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default-Landscape~ipad.png
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default-Portrait@2x~ipad.png
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default-Portrait~ipad.png
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default@2x~iphone.png
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default~iphone.png
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Info.plist
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/MainViewController.nib
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/PkgInfo
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/config.xml
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/de.lproj/Localizable.strings
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/en.lproj/Localizable.strings
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/es.lproj/Localizable.strings
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/fullscreen
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/icon-72.png
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/icon-72@2x.png
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/icon.png
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/icon@2x.png
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/se.lproj/Localizable.strings
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/MainViewController.o
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/fullscreen.LinkFileList
+c000000005175AB620000000000000228
+t1366666082
+s552
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Script-304B58A110DAC018002A0835.sh
+c000000005175AB620000000000000470
+t1366666082
+s1136
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVAvailability.h
+c000000005175A1200000000000000BED
+t1366663456
+s3053
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVCommandDelegate.h
+c000000005175A12000000000000008BA
+t1366663456
+s2234
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVCommandDelegateImpl.h
+c000000005175A1200000000000000473
+t1366663456
+s1139
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVCommandQueue.h
+c000000005175A1200000000000000501
+t1366663456
+s1281
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVInvokedUrlCommand.h
+c000000005175A1200000000000000906
+t1366663456
+s2310
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVPlugin.h
+c000000005175A1200000000000000876
+t1366663456
+s2166
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVPluginResult.h
+c000000005175A1200000000000000C13
+t1366663456
+s3091
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVScreenOrientationDelegate.h
+c000000005175A1200000000000000408
+t1366663456
+s1032
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVViewController.h
+c000000005175A1200000000000000B67
+t1366663456
+s2919
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVWhitelist.h
+c000000005175A120000000000000052D
+t1366663456
+s1325
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/NSMutableArray+QueueAdditions.h
+c000000005175A12000000000000003A0
+t1366663456
+s928
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/libCordova.a
+c000000005175AB620000000000368220
+t1366666082
+s3572256
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/AppDelegate.h
+c000000005175A06300000000000005B9
+t1366663267
+s1465
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/AppDelegate.m
+c000000005175A063000000000000123C
+t1366663267
+s4668
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.h
+c000000005175A06300000000000004D0
+t1366663267
+s1232
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.m
+c000000005175A063000000000000126B
+t1366663267
+s4715
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.xib
+c000000005175A0630000000000001759
+t1366663267
+s5977
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/Capture.bundle
+c000000005175A063000000000000030E
+t1366663267
+s782
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/de.lproj/Localizable.strings
+c000000005175A0630000000000000485
+t1366663267
+s1157
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/en.lproj/Localizable.strings
+c000000005175A0630000000000000470
+t1366663267
+s1136
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/es.lproj/Localizable.strings
+c000000005175A063000000000000047D
+t1366663267
+s1149
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/icons/icon-72.png
+c000000005175A0630000000000001350
+t1366663267
+s4944
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/icons/icon-72@2x.png
+c000000005175A0630000000000002DBA
+t1366663267
+s11706
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/icons/icon.png
+c000000005175A0630000000000000F3E
+t1366663267
+s3902
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/icons/icon@2x.png
+c000000005175A0630000000000001EBD
+t1366663267
+s7869
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/se.lproj/Localizable.strings
+c000000005175A0630000000000000471
+t1366663267
+s1137
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default-568h@2x~iphone.png
+c000000005175A06300000000000085B1
+t1366663267
+s34225
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default-Landscape@2x~ipad.png
+c000000005175A0630000000000012DF4
+t1366663267
+s77300
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default-Landscape~ipad.png
+c000000005175A0630000000000008877
+t1366663267
+s34935
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default-Portrait@2x~ipad.png
+c000000005175A0630000000000012B02
+t1366663267
+s76546
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default-Portrait~ipad.png
+c000000005175A06300000000000085E6
+t1366663267
+s34278
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default@2x~iphone.png
+c000000005175A0630000000000007323
+t1366663267
+s29475
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default~iphone.png
+c000000005175A063000000000000289A
+t1366663267
+s10394
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/config.xml
+c000000005175AB5E000000000000089D
+t1366666078
+s2205
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/fullscreen-Prefix.pch
+c000000005175A06300000000000003C5
+t1366663267
+s965
+
+N/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/main.m
+c000000005175A063000000000000045C
+t1366663267
+s1116
+
+N/var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/fullscreen-Prefix-graghzoxyuaubiaikjumbfhzpefw/fullscreen-Prefix.pch.pth
+t2
+s0
+
+Nfullscreen/fullscreen-Info.plist
+c000000005175AB5E0000000000000742
+t1366666078
+s1858
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies5af608e2e225b741^21c809e2e225b741^---0#1#0#--18"Check dependencies36"59D511A3-4A7C-4DE7-A92D-FFA18306BAD8-
+
+CCompileC build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/AppDelegate.o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/AppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s388358882.572848
+e388358882.648646
+r1
+xCompileC
+xbuild/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/AppDelegate.o
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/AppDelegate.m:68:25: warning: 'useSplashScreen' is deprecated: Deprecated in Cordova 2.5. Add/Remove the SplashScreen plugin instead of setting this property. [-Wdeprecated-declarations]
+o    self.viewController.useSplashScreen = YES;
+o                        ^
+o/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVViewController.h:46:47: note: 'useSplashScreen' declared here
+o@property (nonatomic, readwrite, assign) BOOL useSplashScreen CDV_DEPRECATED(2.5, "Add/Remove the SplashScreen plugin instead of setting this property.");
+o                                              ^
+o1 warning generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compile /Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/AppDelegate.mffce92e2e225b741^9e0ca6e2e225b741^-766"/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/AppDelegate.m:68:25: warning: 'useSplashScreen' is deprecated: Deprecated in Cordova 2.5. Add/Remove the SplashScreen plugin instead of setting this property. [-Wdeprecated-declarations]    self.viewController.useSplashScreen = YES;                        ^/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include/Cordova/CDVViewController.h:46:47: note: 'useSplashScreen' declared here@property (nonatomic, readwrite, assign) BOOL useSplashScreen CDV_DEPRECATED(2.5, "Add/Remove the SplashScreen plugin instead of setting this property.");                                              ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@128"'useSplashScreen' is deprecated: Deprecated in Cordova 2.5. Add/Remove the SplashScreen plugin instead of setting this property.-388358882#18446744073709551615#0#1(2@31"'useSplashScreen' declared here-388358882#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@146"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/CordovaLib/Classes/CDVViewController.h0000000000000000^45#46#45#46#1826#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@140"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/fullscreen/Classes/AppDelegate.m0000000000000000^67#24#67#24#2281#0#12"Deprecations--0#0#0#-19%DVTDocumentLocation4@140"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/fullscreen/Classes/AppDelegate.m0000000000000000^4422"CompileC build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/AppDelegate.o fullscreen/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-generated-files.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-own-target-headers.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-all-target-headers.hmap" -iquote "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-project-headers.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/usr/local/lib/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/UninstalledProducts/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/DerivedSources/i386" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/DerivedSources" "-F/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build" -include /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/fullscreen-Prefix-graghzoxyuaubiaikjumbfhzpefw/fullscreen-Prefix.pch -MMD -MT dependencies -MF "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/AppDelegate.d" --serialize-diagnostics "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/AppDelegate.dia" -c "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/AppDelegate.m" -o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/AppDelegate.o"36"ED744CD0-8A83-47F5-AAC0-5EABE7C64363-
+
+CCompileC build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/MainViewController.o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s388358882.572838
+e388358882.636882
+r1
+xCompileC
+xbuild/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/MainViewController.o
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection135"Compile /Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.m11c392e2e225b741^af0ba3e2e225b741^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.m0000000000000000^4464"CompileC build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/MainViewController.o fullscreen/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-generated-files.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-own-target-headers.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-all-target-headers.hmap" -iquote "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-project-headers.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/usr/local/lib/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/UninstalledProducts/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/DerivedSources/i386" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/DerivedSources" "-F/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build" -include /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/fullscreen-Prefix-graghzoxyuaubiaikjumbfhzpefw/fullscreen-Prefix.pch -MMD -MT dependencies -MF "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/MainViewController.d" --serialize-diagnostics "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/MainViewController.dia" -c "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.m" -o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/MainViewController.o"36"69519297-AAC6-4875-91AC-1E6D81527969-
+
+CCompileC build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/main.o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s388358882.572824
+e388358882.596215
+r1
+xCompileC
+xbuild/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/main.o
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/main.me1d192e2e225b741^83c298e2e225b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/fullscreen/main.m0000000000000000^4364"CompileC build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/main.o fullscreen/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-generated-files.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-own-target-headers.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-all-target-headers.hmap" -iquote "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-project-headers.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/usr/local/lib/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/UninstalledProducts/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/DerivedSources/i386" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/DerivedSources" "-F/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build" -include /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/fullscreen-Prefix-graghzoxyuaubiaikjumbfhzpefw/fullscreen-Prefix.pch -MMD -MT dependencies -MF "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/main.d" --serialize-diagnostics "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/main.dia" -c "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/main.m" -o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/main.o"36"485FF0E9-EFA4-466C-8458-FE0D7EA15A6D-
+
+CCompileXIB "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.xib"
+s388358882.206894
+e388358882.233934
+r1
+xCompileXIB
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"Compiling /Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.xib7b1135e2e225b741^47e83be2e225b741^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.xib0000000000000000^1260"CompileXIB fullscreen/Classes/MainViewController.xib    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/MainViewController.nib" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Classes/MainViewController.xib" --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"5D638233-3492-422F-A31A-AA81BB419009-
+
+CCopyStringsFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/de.lproj/Localizable.strings" fullscreen/Resources/de.lproj/Localizable.strings
+s388358882.211664
+e388358882.223539
+r1
+xCopyStringsFile
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/de.lproj/Localizable.strings
+xfullscreen/Resources/de.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy fullscreen/Resources/de.lproj/Localizable.strings556a36e2e225b741^753939e2e225b741^---0#0#0#-19%DVTDocumentLocation2@157"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/fullscreen/Resources/de.lproj/Localizable.strings0000000000000000^876"CopyStringsFile build/fullscreen.app/de.lproj/Localizable.strings fullscreen/Resources/de.lproj/Localizable.strings    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/de.lproj" -- fullscreen/Resources/de.lproj/Localizable.strings36"257BC869-3DFC-4A67-B097-533AD25D8BCF-
+
+CCopyStringsFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/en.lproj/Localizable.strings" fullscreen/Resources/en.lproj/Localizable.strings
+s388358882.206538
+e388358882.221362
+r1
+xCopyStringsFile
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/en.lproj/Localizable.strings
+xfullscreen/Resources/en.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy fullscreen/Resources/en.lproj/Localizable.strings6c0535e2e225b741^97aa38e2e225b741^---0#0#0#-19%DVTDocumentLocation2@157"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/fullscreen/Resources/en.lproj/Localizable.strings0000000000000000^876"CopyStringsFile build/fullscreen.app/en.lproj/Localizable.strings fullscreen/Resources/en.lproj/Localizable.strings    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/en.lproj" -- fullscreen/Resources/en.lproj/Localizable.strings36"A63AD161-A66C-42A5-B45B-AB9B24E47733-
+
+CCopyStringsFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/es.lproj/Localizable.strings" fullscreen/Resources/es.lproj/Localizable.strings
+s388358882.206713
+e388358882.221461
+r1
+xCopyStringsFile
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/es.lproj/Localizable.strings
+xfullscreen/Resources/es.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy fullscreen/Resources/es.lproj/Localizable.strings180935e2e225b741^25b138e2e225b741^---0#0#0#-19%DVTDocumentLocation2@157"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/fullscreen/Resources/es.lproj/Localizable.strings0000000000000000^876"CopyStringsFile build/fullscreen.app/es.lproj/Localizable.strings fullscreen/Resources/es.lproj/Localizable.strings    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/es.lproj" -- fullscreen/Resources/es.lproj/Localizable.strings36"02587EF5-3FDB-44CE-9E8B-C7142BE25916-
+
+CCopyStringsFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/se.lproj/Localizable.strings" fullscreen/Resources/se.lproj/Localizable.strings
+s388358882.217098
+e388358882.224605
+r1
+xCopyStringsFile
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/se.lproj/Localizable.strings
+xfullscreen/Resources/se.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy fullscreen/Resources/se.lproj/Localizable.stringsceaa37e2e225b741^d87f39e2e225b741^---0#0#0#-19%DVTDocumentLocation2@157"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/fullscreen/Resources/se.lproj/Localizable.strings0000000000000000^876"CopyStringsFile build/fullscreen.app/se.lproj/Localizable.strings fullscreen/Resources/se.lproj/Localizable.strings    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/se.lproj" -- fullscreen/Resources/se.lproj/Localizable.strings36"139958B4-4067-4F2B-9561-05C19CE49B7A-
+
+CCpResource fullscreen/Resources/Capture.bundle build/fullscreen.app/Capture.bundle
+s388358882.206530
+e388358882.220650
+r1
+xCpResource
+xfullscreen/Resources/Capture.bundle
+xbuild/fullscreen.app/Capture.bundle
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy build/fullscreen.app/Capture.bundle3cf934e2e225b741^a67c38e2e225b741^---0#0#0#-19%DVTDocumentLocation2@143"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Capture.bundle000000000080d041^929"CpResource fullscreen/Resources/Capture.bundle build/fullscreen.app/Capture.bundle    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/Capture.bundle" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"D94B9170-F269-4555-A9A5-0BA5E6157401-
+
+CCpResource fullscreen/Resources/icons/icon-72.png build/fullscreen.app/icon-72.png
+s388358882.206510
+e388358882.218394
+r1
+xCpResource
+xfullscreen/Resources/icons/icon-72.png
+xbuild/fullscreen.app/icon-72.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Copy build/fullscreen.app/icon-72.png50fc34e2e225b741^21e937e2e225b741^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/icon-72.png000000000080d041^932"CpResource fullscreen/Resources/icons/icon-72.png build/fullscreen.app/icon-72.png    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/icons/icon-72.png" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"A82CC9BC-5EBC-4E48-912B-45E11A943111-
+
+CCpResource fullscreen/Resources/icons/icon-72@2x.png build/fullscreen.app/icon-72@2x.png
+s388358882.226742
+e388358882.233469
+r1
+xCpResource
+xfullscreen/Resources/icons/icon-72@2x.png
+xbuild/fullscreen.app/icon-72@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy build/fullscreen.app/icon-72@2x.png3e263ae2e225b741^15c53be2e225b741^---0#0#0#-19%DVTDocumentLocation2@143"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/icon-72@2x.png000000000080d041^945"CpResource "fullscreen/Resources/icons/icon-72@2x.png" "build/fullscreen.app/icon-72@2x.png"    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/icons/icon-72@2x.png" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"B6492746-BA4A-4E7A-ACE2-96EBA71A64DC-
+
+CCpResource fullscreen/Resources/icons/icon.png build/fullscreen.app/icon.png
+s388358882.206502
+e388358882.218689
+r1
+xCpResource
+xfullscreen/Resources/icons/icon.png
+xbuild/fullscreen.app/icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"Copy build/fullscreen.app/icon.png04fe34e2e225b741^11fc37e2e225b741^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/icon.png000000000080d041^923"CpResource fullscreen/Resources/icons/icon.png build/fullscreen.app/icon.png    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/icons/icon.png" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"8A19811E-19E4-4983-A06A-12C78B412879-
+
+CCpResource fullscreen/Resources/icons/icon@2x.png build/fullscreen.app/icon@2x.png
+s388358882.206519
+e388358882.215821
+r1
+xCpResource
+xfullscreen/Resources/icons/icon@2x.png
+xbuild/fullscreen.app/icon@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Copy build/fullscreen.app/icon@2x.pngd3f934e2e225b741^784637e2e225b741^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/icon@2x.png000000000080d041^936"CpResource "fullscreen/Resources/icons/icon@2x.png" "build/fullscreen.app/icon@2x.png"    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/icons/icon@2x.png" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"DB5B62C7-7B61-4A05-A367-1DE04E83C090-
+
+CCpResource fullscreen/Resources/splash/Default-568h@2x~iphone.png build/fullscreen.app/Default-568h@2x~iphone.png
+s388358882.224705
+e388358882.232346
+r1
+xCpResource
+xfullscreen/Resources/splash/Default-568h@2x~iphone.png
+xbuild/fullscreen.app/Default-568h@2x~iphone.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Copy build/fullscreen.app/Default-568h@2x~iphone.pnga59e39e2e225b741^e57a3be2e225b741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default-568h@2x~iphone.png000000000080d041^983"CpResource "fullscreen/Resources/splash/Default-568h@2x~iphone.png" "build/fullscreen.app/Default-568h@2x~iphone.png"    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default-568h@2x~iphone.png" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"73212C47-E0A1-4A9F-9B5B-82913DBB0E20-
+
+CCpResource fullscreen/Resources/splash/Default-Landscape@2x~ipad.png build/fullscreen.app/Default-Landscape@2x~ipad.png
+s388358882.219558
+e388358882.226865
+r1
+xCpResource
+xfullscreen/Resources/splash/Default-Landscape@2x~ipad.png
+xbuild/fullscreen.app/Default-Landscape@2x~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy build/fullscreen.app/Default-Landscape@2x~ipad.png014d38e2e225b741^d3133ae2e225b741^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default-Landscape@2x~ipad.png000000000080d041^992"CpResource "fullscreen/Resources/splash/Default-Landscape@2x~ipad.png" "build/fullscreen.app/Default-Landscape@2x~ipad.png"    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default-Landscape@2x~ipad.png" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"ED1602BD-64A3-47D1-AF95-3D2E51420780-
+
+CCpResource fullscreen/Resources/splash/Default-Landscape~ipad.png build/fullscreen.app/Default-Landscape~ipad.png
+s388358882.219561
+e388358882.225588
+r1
+xCpResource
+xfullscreen/Resources/splash/Default-Landscape~ipad.png
+xbuild/fullscreen.app/Default-Landscape~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Copy build/fullscreen.app/Default-Landscape~ipad.png284838e2e225b741^87c039e2e225b741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default-Landscape~ipad.png000000000080d041^983"CpResource "fullscreen/Resources/splash/Default-Landscape~ipad.png" "build/fullscreen.app/Default-Landscape~ipad.png"    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default-Landscape~ipad.png" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"9426B57E-2580-4B92-9726-03D0BE13F318-
+
+CCpResource fullscreen/Resources/splash/Default-Portrait@2x~ipad.png build/fullscreen.app/Default-Portrait@2x~ipad.png
+s388358882.221769
+e388358882.229000
+r1
+xCpResource
+xfullscreen/Resources/splash/Default-Portrait@2x~ipad.png
+xbuild/fullscreen.app/Default-Portrait@2x~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy build/fullscreen.app/Default-Portrait@2x~ipad.png01e038e2e225b741^cf9f3ae2e225b741^---0#0#0#-19%DVTDocumentLocation2@157"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default-Portrait@2x~ipad.png000000000080d041^989"CpResource "fullscreen/Resources/splash/Default-Portrait@2x~ipad.png" "build/fullscreen.app/Default-Portrait@2x~ipad.png"    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default-Portrait@2x~ipad.png" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"95EEDE6D-E0BB-4109-83B1-BD53A23C8815-
+
+CCpResource fullscreen/Resources/splash/Default-Portrait~ipad.png build/fullscreen.app/Default-Portrait~ipad.png
+s388358882.221783
+e388358882.227903
+r1
+xCpResource
+xfullscreen/Resources/splash/Default-Portrait~ipad.png
+xbuild/fullscreen.app/Default-Portrait~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/fullscreen.app/Default-Portrait~ipad.png27db38e2e225b741^c9573ae2e225b741^---0#0#0#-19%DVTDocumentLocation2@154"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default-Portrait~ipad.png000000000080d041^980"CpResource "fullscreen/Resources/splash/Default-Portrait~ipad.png" "build/fullscreen.app/Default-Portrait~ipad.png"    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default-Portrait~ipad.png" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"A54AFF7C-0AD9-4856-B7C6-300E81FF2103-
+
+CCpResource fullscreen/Resources/splash/Default@2x~iphone.png build/fullscreen.app/Default@2x~iphone.png
+s388358882.221791
+e388358882.230103
+r1
+xCpResource
+xfullscreen/Resources/splash/Default@2x~iphone.png
+xbuild/fullscreen.app/Default@2x~iphone.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Copy build/fullscreen.app/Default@2x~iphone.png72e138e2e225b741^c5e73ae2e225b741^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default@2x~iphone.png000000000080d041^968"CpResource "fullscreen/Resources/splash/Default@2x~iphone.png" "build/fullscreen.app/Default@2x~iphone.png"    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default@2x~iphone.png" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"5D815D8B-B994-49DA-8F09-083719BB371A-
+
+CCpResource fullscreen/Resources/splash/Default~iphone.png build/fullscreen.app/Default~iphone.png
+s388358882.224723
+e388358882.231157
+r1
+xCpResource
+xfullscreen/Resources/splash/Default~iphone.png
+xbuild/fullscreen.app/Default~iphone.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy build/fullscreen.app/Default~iphone.png7c9839e2e225b741^3c2d3be2e225b741^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Default~iphone.png000000000080d041^959"CpResource "fullscreen/Resources/splash/Default~iphone.png" "build/fullscreen.app/Default~iphone.png"    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/Resources/splash/Default~iphone.png" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"6234F59E-66E6-4E7D-9B65-FC772DEE6F2A-
+
+CCpResource fullscreen/config.xml build/fullscreen.app/config.xml
+s388358882.206488
+e388358882.208938
+r1
+xCpResource
+xfullscreen/config.xml
+xbuild/fullscreen.app/config.xml
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy build/fullscreen.app/config.xmlf9f834e2e225b741^187d35e2e225b741^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app/config.xml000000000080d041^897"CpResource fullscreen/config.xml build/fullscreen.app/config.xml    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/config.xml" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"68A953E0-DC33-42B7-826D-F7A16EE127EF-
+
+CGenerateDSYMFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app.dSYM" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/fullscreen"
+s388358882.759602
+e388358882.837539
+r1
+xGenerateDSYMFile
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app.dSYM
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/fullscreen
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Generate /Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app.dSYMce88c2e2e225b741^e867d6e2e225b741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/build/fullscreen.app.dSYM000000000080d041^913"GenerateDSYMFile build/fullscreen.app.dSYM build/fullscreen.app/fullscreen    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/fullscreen" -o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app.dSYM"36"7785A0FD-F85C-4146-BA72-26C141B8A54B-
+
+CLd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/fullscreen" normal i386
+s388358882.655384
+e388358882.752811
+r1
+xLd
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/fullscreen
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Link /Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/fullscreen3bdfa7e2e225b741^a2b7c0e2e225b741^---0#0#0#--2085"Ld build/fullscreen.app/fullscreen normal i386    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk "-L/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build" "-F/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build" -filelist "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/fullscreen.LinkFileList" -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -all_load -Obj-C -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.0 -framework AssetsLibrary "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/libCordova.a" -framework Foundation -weak_framework UIKit -framework CoreGraphics -framework AddressBook -framework AddressBookUI -framework AudioToolbox -weak_framework AVFoundation -framework CFNetwork -framework CoreLocation -framework MediaPlayer -framework QuartzCore -framework SystemConfiguration -framework MobileCoreServices -weak_framework CoreMedia -o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/fullscreen"36"E1D779AE-1BA8-40C0-9DBC-522AAAFBB2DB-
+
+CPhaseScriptExecution "Copy www directory" "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Script-304B58A110DAC018002A0835.sh"
+s388358882.057169
+e388358882.198955
+r1
+xPhaseScriptExecution
+xCopy www directory
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Script-304B58A110DAC018002A0835.sh
+o
+oreal	0m0.125s
+ouser	0m0.053s
+osys	0m0.064s
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'0ea00fe2e225b741^2cef32e2e225b741^-42"real	0m0.125suser	0m0.053ssys	0m0.064s3(21%IDEActivityLogMessage2@14"real	0m0.125s-388358882#1#14#-0#-----2@14"user	0m0.053s-388358882#15#14#-0#-----2@13"sys	0m0.064s-388358882#29#13#-0#-----0#0#0#--22901"PhaseScriptExecution "Copy www directory" build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Script-304B58A110DAC018002A0835.sh    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER ray    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build"    setenv BUILD_ROOT "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build"    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build"    setenv CACHE_ROOT /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_ENABLE_OBJC_ARC NO    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build"    setenv CONFIGURATION_TEMP_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator"    setenv CONTENTS_FOLDER_PATH fullscreen.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CORDOVALIB /Users/ray/Documents/CordovaLib    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH fullscreen.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/fullscreen.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME fullscreen.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build"    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH fullscreen.app/Executables    setenv EXECUTABLE_FOLDER_PATH fullscreen.app    setenv EXECUTABLE_NAME fullscreen    setenv EXECUTABLE_PATH fullscreen.app/fullscreen    setenv FILE_LIST "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH fullscreen.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME fullscreen.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER fullscreen/fullscreen-Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include\" \"/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/usr/local/lib/include\" \"/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/UninstalledProducts/include\" \"/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE fullscreen/fullscreen-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH fullscreen.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH fullscreen.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/fullscreen.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER ray    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/fullscreen.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH fullscreen.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-LinkMap-normal-i386.txt"    setenv LD_NO_PIE NO    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal/i386/fullscreen.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH fullscreen.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 12D78    setenv MAC_OS_X_VERSION_ACTUAL 1083    setenv MAC_OS_X_VERSION_MAJOR 1080    setenv MAC_OS_X_VERSION_MINOR 0803    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Objects-normal"    setenv OBJROOT "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build"    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -all_load -Obj-C"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH fullscreen.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/PkgInfo"    setenv PKGINFO_PATH fullscreen.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_PRODUCT_BUILD_VERSION 10B141    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 60100    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH fullscreen.app/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH fullscreen.app/PrivateHeaders    setenv PRODUCT_NAME fullscreen    setenv PRODUCT_SETTINGS_PATH "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/fullscreen-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT fullscreen    setenv PROJECT_DERIVED_FILE_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/DerivedSources"    setenv PROJECT_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PROJECT_FILE_PATH "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen.xcodeproj"    setenv PROJECT_NAME fullscreen    setenv PROJECT_TEMP_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build"    setenv PROJECT_TEMP_ROOT "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build"    setenv PUBLIC_HEADERS_FOLDER_PATH fullscreen.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH fullscreen.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk    setenv SDK_NAME iphonesimulator6.1    setenv SDK_PRODUCT_BUILD_VERSION 10B141    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/DerivedSources"    setenv SHARED_FRAMEWORKS_FOLDER_PATH fullscreen.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH fullscreen.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv SRCROOT "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1,2    setenv TARGETNAME fullscreen    setenv TARGET_BUILD_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build"    setenv TARGET_NAME fullscreen    setenv TARGET_TEMP_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build"    setenv TEMP_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build"    setenv TEMP_FILES_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build"    setenv TEMP_FILE_DIR "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build"    setenv TEMP_ROOT "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build"    setenv TEST_AFTER_BUILD NO    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH fullscreen.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER ray    setenv USER_APPS_DIR /Users/ray/Applications    setenv USER_LIBRARY_DIR /Users/ray/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH fullscreen.app/version.plist    setenv VERSION_INFO_BUILDER ray    setenv VERSION_INFO_FILE fullscreen_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:fullscreen  PROJECT:fullscreen-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME fullscreen.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4H1003    setenv XCODE_VERSION_ACTUAL 0462    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0460    setenv YACC yacc    /bin/sh -c "\"/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/Script-304B58A110DAC018002A0835.sh\""36"C929F6E2-A2B4-4070-9273-A2FFBAAB9956-
+
+CProcessInfoPlistFile "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Info.plist" fullscreen/fullscreen-Info.plist
+s388358882.046192
+e388358882.049166
+r1
+xProcessInfoPlistFile
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Info.plist
+xfullscreen/fullscreen-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Process fullscreen/fullscreen-Info.plist3fe60be2e225b741^25960ce2e225b741^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/fullscreen/fullscreen-Info.plist0000000000000000^963"ProcessInfoPlistFile build/fullscreen.app/Info.plist fullscreen/fullscreen-Info.plist    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    builtin-infoPlistUtility fullscreen/fullscreen-Info.plist -genpkginfo "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app/Info.plist"36"F97D4B51-7B4A-4046-BE7E-AA191E5899C3-
+
+CProcessPCH /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/fullscreen-Prefix-graghzoxyuaubiaikjumbfhzpefw/fullscreen-Prefix.pch.pth fullscreen/fullscreen-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s388358882.241505
+e388358882.565993
+r1
+xProcessPCH
+x/var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/fullscreen-Prefix-graghzoxyuaubiaikjumbfhzpefw/fullscreen-Prefix.pch.pth
+xfullscreen/fullscreen-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile fullscreen/fullscreen-Prefix.pchfcfe3de2e225b741^21e490e2e225b741^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/ray/Dropbox/presentations/Advanced%20PhoneGap%20Build/demos/fullscreen/platforms/ios/fullscreen/fullscreen-Prefix.pch0000000000000000^4269"ProcessPCH /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/fullscreen-Prefix-graghzoxyuaubiaikjumbfhzpefw/fullscreen-Prefix.pch.pth fullscreen/fullscreen-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-generated-files.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-own-target-headers.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-all-target-headers.hmap" -iquote "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/fullscreen-project-headers.hmap" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/usr/local/lib/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/UninstalledProducts/include" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/DerivedSources/i386" "-I/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.build/Debug-iphonesimulator/fullscreen.build/DerivedSources" "-F/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build" --serialize-diagnostics /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/fullscreen-Prefix-graghzoxyuaubiaikjumbfhzpefw/fullscreen-Prefix.pch.dia -c "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/fullscreen/fullscreen-Prefix.pch" -o /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/fullscreen-Prefix-graghzoxyuaubiaikjumbfhzpefw/fullscreen-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/k9/g7ld9hts5k7d8cnvwz7vw8900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/fullscreen-Prefix-graghzoxyuaubiaikjumbfhzpefw/fullscreen-Prefix.pch.d36"E0E21B5D-1721-4D14-8A8F-8942BE6E32C1-
+
+CTouch "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"
+s388358882.845533
+e388358882.850727
+r1
+xTouch
+x/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Touch /Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.appbe86d8e2e225b741^1dc9d9e2e225b741^---0#0#0#--657"Touch build/fullscreen.app    cd "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/groovy/bin:/usr/local/grails/current/bin:/Applications/android-sdk-macosx/tools:/Applications/android-sdk-macosx/platform-tools:/Applications/MAMP/Library/bin:"    /usr/bin/touch -c "/Users/ray/Dropbox/presentations/Advanced PhoneGap Build/demos/fullscreen/platforms/ios/build/fullscreen.app"36"67F31F42-9ACA-464C-BD56-F8F2F6CD97F6-
+

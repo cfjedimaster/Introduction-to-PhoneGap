@@ -1,0 +1,15 @@
+2013-04-22 15:42:38.626 fullscreen[22910:c07] Multi-tasking -> Device: YES, App: YES
+2013-04-22 15:42:38.873 fullscreen[22910:c07] Resetting plugins due to page load.
+2013-04-22 15:42:38.977 fullscreen[22910:c07] Finished load of: file:///Users/ray/Library/Application%20Support/iPhone%20Simulator/6.1/Applications/2BEBA1D2-4863-48A6-8B8C-19AFB01EDC12/fullscreen.app/www/index.html
+2013-04-22 15:42:38.988 fullscreen[22910:c07] DEPRECATION NOTICE: The Connection ReachableViaWWAN return value of '2g' is deprecated as of Cordova version 2.6.0 and will be changed to 'cellular' in a future release. 
+2013-04-22 15:42:38.997 fullscreen[22910:c07] [LOG] report:deviceready
+2013-04-22 15:43:13.128 fullscreen[23145:c07] Multi-tasking -> Device: YES, App: YES
+2013-04-22 15:43:13.165 fullscreen[23145:c07] Resetting plugins due to page load.
+2013-04-22 15:43:13.205 fullscreen[23145:c07] Finished load of: file:///Users/ray/Library/Application%20Support/iPhone%20Simulator/6.1/Applications/2BEBA1D2-4863-48A6-8B8C-19AFB01EDC12/fullscreen.app/www/index.html
+2013-04-22 15:43:13.212 fullscreen[23145:c07] DEPRECATION NOTICE: The Connection ReachableViaWWAN return value of '2g' is deprecated as of Cordova version 2.6.0 and will be changed to 'cellular' in a future release. 
+2013-04-22 15:43:13.218 fullscreen[23145:c07] [LOG] report:deviceready
+2013-04-22 15:44:31.689 fullscreen[23370:c07] Multi-tasking -> Device: YES, App: YES
+2013-04-22 15:44:31.726 fullscreen[23370:c07] Resetting plugins due to page load.
+2013-04-22 15:44:31.766 fullscreen[23370:c07] Finished load of: file:///Users/ray/Library/Application%20Support/iPhone%20Simulator/6.1/Applications/2BEBA1D2-4863-48A6-8B8C-19AFB01EDC12/fullscreen.app/www/index.html
+2013-04-22 15:44:31.773 fullscreen[23370:c07] DEPRECATION NOTICE: The Connection ReachableViaWWAN return value of '2g' is deprecated as of Cordova version 2.6.0 and will be changed to 'cellular' in a future release. 
+2013-04-22 15:44:31.778 fullscreen[23370:c07] [LOG] report:deviceready
