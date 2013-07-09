@@ -2,37 +2,13 @@ var RSS = "http://www.raymondcamden.com/rss.cfm";
 var entries = [];
 var selected = "";
 
-var mobileReady = false;
-var jqmReady = false;
-
-document.addEventListener("deviceready", function() {
-	mobileReady = true;
-	if(mobileReady && jqmReady) start();
-},false);
-
-$(document).on("pageinit", "#mainPage", function(event,data) {
-	console.log("Called pageinit for mainPage");
-	jqmReady = true;
-	if(jqmReady && mobileReady) start();
-	
-});
-
-function start() {
-	var contype = navigator.connection.type;
-	if(contype == Connection.NONE) {
-		displayAlert("Sorry, but you are offline.");	
-	} else {
-		google.load("feeds", "1",{callback:initialize});
-	}
-}
-
 $(document).on("touchend", ".contentLink", function(e) {
 	selected = $(this).data("entryid");
 });
 
 $(document).on("touchend", ".fullLink", function(e) {
 	e.preventDefault();
-	window.open($(this).attr("href"));
+	window.open($(this).attr("href"), '_blank','location=yes');
 });
 
 function initialize() {
@@ -48,15 +24,12 @@ function initialize() {
 	});
 }
 
-//Wrapped call to handle alerts desktop/mobile
-function displayAlert(s) {
-	if(navigator.notification) {
-		navigator.notification.alert(s, null);
-	} else {
-		alert(s);
-	}
-}
+$(document).on("pageinit", "#mainPage", function(event,data) {
+	console.log("Called pageinit for mainPage");
+	
+	google.load("feeds", "1",{callback:initialize});
 
+});
 
 // I handle the "Flash of Previou Content issue"
 $(document).on("pagebeforeshow", "#contentPage", function(event,data) {
