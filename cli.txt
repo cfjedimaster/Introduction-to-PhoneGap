@@ -1,1 +1,1 @@
-/Users/ray/Dropbox/Mobile/phonegap-2.6.0/lib/ios/bin/create dirtestios3 org.camden.testios3 test3
+/Users/ray/Dropbox/Mobile/phonegap-2.8.1/lib/ios/bin/create dirtestios3 org.camden.testios3 test3

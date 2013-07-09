@@ -54,24 +54,22 @@ function setupButtonHandler() {
 		//disable button while we search
 		$(this).attr("disabled","disabled");
 
-		$("#results").html("<i>Doing a search for "+search+"</i>");
+		$("#results").html("<i>Doing a lookup for "+search+"</i>");
 
 		//ok, hit the API
-		$.get("http://search.twitter.com/search.json", {"q":search}, function(res,code) {
-			if(res.results && res.results.length) {
+		$.get("./service.cfc?method=getdata", {"zip":search}, function(res,code) {
+			if(res.length) {
 				var s = "<h2>Results</h2>";
-				for(var i=0, len=res.results.length; i<len; i++) {
-					var entry = res.results[i];
-					s += "<p><img src='"+entry.profile_image_url+"'>";
-					s += entry.from_user+"<br/>";
-					s += entry.created_at+"<br/>";
-					s += entry.text;
+				for(var i=0, len=res.length; i<len; i++) {
+					var entry = res[i];
+					s += "<b>"+entry.title +"</b><br/>";
+					s += entry.body;
 					s += "</p>";
 				}
 				$("#results").html(s);
 				$("#searchBtn").removeAttr("disabled");
 			}
-		});
+		},"json");
 
 	});
 };
@@ -82,7 +80,7 @@ function setupButtonHandler() {
 
 <body>
 
-<input type="text" id="search" placeholder="Enter Search Term"><br/>
+<input type="text" id="search" placeholder="Enter Zip"><br/>
 <button id="searchBtn">Search</button>
 
 <div id="results">

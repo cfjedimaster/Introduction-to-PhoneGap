@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>RSS Lab</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!--
+				<section>
+					<h1>RSS Lab</h1>
+					<h3>HTML Presentations Made Easy</h3>
+					<p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p>
+				</section>
+				-->
+				
+				<section>
+					<img src="img/bigrss.gif" width="250" class="transparent">
+					<h2>RSS Lab</h2>
+					<p>
+					<strong>GOAL:</strong> Build a simple application that can parse and read
+						a RSS feed.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Features</h2>
+					<ul>
+					<li class="fragment">View the entries from the RSS feed</li>
+					<li class="fragment">Read the entry detail</li>
+					<li class="fragment">View the entry on the site</li>
+					<li class="fragment">Easy to update the RSS link, but only at the code level</li>
+					<li class="fragment">Offline support (if data was downloaded previously, but either way, handle it nicely)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>How - Architecture</h2>
+					<p>
+					Single Page Application
+					</p>
+					<blockquote>
+					A single-page application (SPA), also known as single-page interface (SPI), is a web application or web site that fits on a single web page with the goal of providing a more fluid user experience akin to a desktop application. (Source: Wikipedia)
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>How - Architecture</h2>
+					<ul>
+					<li class="fragment">This does not mean one physical file</li>
+					<li class="fragment">Load in resources and inject them into the DOM</li>
+					<li class="fragment">This is crucial for PhoneGap because of deviceready</li>
+					<li class="fragment">We're building apps, not web pages!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>How - User Interface and User Experience</h2>
+					<p class="fragment">
+					Let's just cheat and use a framework!
+					</p>
+				</section>
+
+				<section>
+					<h2>How - User Interface and User Experience</h2>
+					<ul>
+					<li class="fragment">Mobile friendly UI,UX is mostly a known quantity</li>
+					<li class="fragment">Do you build for Android, iOS, etc?</li>
+					</ul>
+				</section>
+				
+				<section>
+					<img src="img/ios.PNG" style="float:left" class="transparent"><img src="img/android.png" class="transparent">
+				</section>
+
+				<section>
+					<h2>Our Solution:</h2>
+					<img class="fragment transparent" src="img/jquery-mobile-logo.png" style="width:300px">
+				</section>	
+				
+				<section>
+					<h2>jQuery Mobile</h2>
+					<ul>
+					<li>Free UI framework</li>
+					<li>Available at jquerymobile.com</li>
+					<li>Version 1.3.1</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>jQuery Mobile - The Bad</h2>
+					<ul>
+					<li class="fragment">Performance</li>
+					<li class="fragment">Similar UI</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>jQuery Mobile - The Good</h2>
+					<ul>
+					<li class="fragment">Can do both UI/UX and SPA</li>
+					<li class="fragment"><strong>Very</strong> simple</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>Let's learn jQuery Mobile (Quickly!)</h1>
+				</section>
+				
+				<section>
+					<h2>The Basics</h2>
+					<ul>
+						<li>Built on jQuery and jQuery UI</li>
+						<li>Not just Android and iPhone</li>
+						<li>Support Grid: http://jquerymobile.com/gbs/</li>
+						<li>Optimized support for layout and touch</li>
+						<li>Accessible</li>
+						<li>Themable</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Current Support</h2>
+					<ul>
+						<li>Apple: iOS 3.2-6.1</li>
+						<li>Android: 2.1-4.1</li>
+						<li>Blackberry: 6-10 (including Playbook)</li>
+						<li>Windows Phone: 7-7.5</li>
+						<li>Kindle and Nook</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Examples?</h2>
+					<p>
+					jQM Gallery: http://www.jqmgallery.com
+					</p>
+				</section>
+				
+				<section>
+					<h2>Using jQM</h2>
+					<ul>
+					<li>Download the bit or use the CDN</li>
+					<li>Use an HTML5 template with a good meta/viewport</li>
+					<li>Include jQuery and jQuery Mobile JS</li>
+					<li>Include jQuery Mobile CSS</li>
+					</ul>
+				</section>
+				
+				<section>
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;title&gt;Mobile is cool because&lt;/title&gt;
+&lt;link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" /&gt;
+&lt;script src="http://code.jquery.com/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+				</code></pre>
+				</section>
+	
+				<section>
+					<h2>Using jQM (2)</h2>
+					<ul>
+						<li>JQM has a concept of pages</li>
+						<li>Think of a page as a mobile view</li>
+						<li>Div tags with data-role (&lt;div data-role=""&gt;)</li>
+						<li>Define header, content, and footer (optional)</li>
+					</ul>
+				</section>
+
+				<section>
+				<pre><code>
+<div data-role="page">
+	<div data-role="header">
+	<h1>Welcome</h1>
+	</div>
+
+	<div data-role="content">
+	<p>
+	This is the first page.
+	</p>
+	</div>
+
+	<div data-role="footer">
+	<h4>Copyright 2013.</h4>
+	</div>
+</div>				
+				</code></pre>
+				</section>		
+				
+				<section>
+					<iframe src="../demos/jqm1.html" width="320" height="590"></iframe>
+				</section>
+				
+				<section>
+					<h2>Multiple Pages</h2>
+					<ul>
+					<li>Normal links get loaded via AJAX</li>
+					<li>Can be disabled via data-ajax="false" on the link</li>
+					<li>Assumption is one jQM "page" per HTML file</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Quick Example</h2>
+					<p>
+					/demos/demo2
+					</p>
+				</section>
+				
+				<section>
+					<h2>Widgets and UI Controls</h2>
+					<ul>
+						<li>Lists</li>
+						<li>Buttons and Toolbars</li>
+						<li>Forms</li>
+						<li>Misc</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Lists</h2>
+					<ul>
+						<li>Defined by data-role="listview"</li>
+						<li>Multiple types of lists (icons, filterable, autusuggest)</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Example</h2>
+					<pre><code>
+<ul data-role="listview"> 
+	<li>Item One</li> 
+	<li>Item Two</li> 
+	<li>Item Three</li> 
+</ul>
+					</code></pre>
+				</section>
+
+				<section>
+					<iframe src="../demos/jqm_list.html" width="320" height="590"></iframe>
+				</section>
+
+				<section>
+					<h2>Another Example</h2>
+					<pre><code>
+<ul data-role="listview" data-inset="true"> 
+	<li>Item One</li> 
+	<li>Item Two</li> 
+	<li>Item Three</li> 
+</ul>
+					</code></pre>
+				</section>
+
+				<section>
+					<iframe src="../demos/jqm_list2.html" width="320" height="590"></iframe>
+				</section>
+
+				<section>
+					<h2>Another Example - Filter</h2>
+					<pre><code>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search cars..."> 
+	<li>Item One</li> 
+	<li>Item Two</li> 
+	<li>Item Three</li> 
+</ul>
+					</code></pre>
+				</section>
+				<section>
+					<iframe src="../demos/jqm_list4.html" width="320" height="590"></iframe>
+				</section>
+				
+				<section>
+					<h2>Another Example - Autocomplete</h2>
+					<pre><code>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search cars..."> 
+	<li>Item One</li> 
+	<li>Item Two</li> 
+	<li>Item Three</li> 
+</ul>
+					</code></pre>
+				</section>
+				<section>
+					<iframe src="../demos/jqm_list3.html" width="320" height="590"></iframe>
+				</section>
+
+				<section>
+					<h2>Header/Footers</h2>
+					<ul>
+					<li>Can add buttons</li>
+					<li>... with fancy icons!</li>
+					<li>Can make them persistent</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Another Example</h2>
+					<pre><code>
+&lt;div data-role="header"&gt;
+&lt;a href="test.html"&gt;First&lt;/a&gt;
+&lt;h1&gt;Click the buttons...&lt;/h1&gt;
+&lt;a href="test.html"&gt;Second&lt;/a&gt;
+&lt;/div&gt;
+					</code></pre>
+				</section>
+				<section>
+					<iframe src="../demos/jqm_header.html" width="320" height="590"></iframe>
+				</section>
+
+				<section>
+					<h2>Another Example - Icons</h2>
+					<pre><code>
+&lt;div data-role="header"&gt;
+&lt;a href="test.html" data-icon="home" data-iconpos="notext"&gt;First&lt;/a&gt;
+&lt;h1&gt;Click the buttons...&lt;/h1&gt;
+&lt;a href="test.html" data-icon="plus"&gt;Second&lt;/a&gt;
+&lt;/div&gt;
+					</code></pre>
+				</section>
+				
+				<section>
+					<iframe src="../demos/jqm_header2.html" width="320" height="590"></iframe>
+				</section>
+
+				<section>
+					<h2>Forms</h2>
+					<ul>
+					<li>Automatically switched to AJAX posts</li>
+					<li>All form fields automatically improved for awesomeness (can be disabled with data-role="none")</li>
+					<li>There is a recommended "fieldcontain" class</li>
+					<li>Adds support for search, slider, flip toggles</li>
+					</ul>
+				</section>				
+
+				<section>
+					<h2>Another Example</h2>
+					<pre><code>
+<div data-role="fieldcontain">
+<label for="name">Your Name:</label>
+<input type="text" name="name" id="name" />
+</div>
+				</code></pre>
+				</section>
+
+				<section>
+					<iframe src="../demos/jqm_form.html" width="320" height="590"></iframe>
+				</section>
+
+
+				<section>
+					<iframe src="../demos/jqm_form.html" height="320" width="590"></iframe>
+				</section>
+	
+				<section>
+					<h2>Misc Widgets</h2>
+					<ul>
+					<li>Dialogs</li>
+					<li>Collapsible content divs (and accordions)</li>	
+					<li>Grids</li>
+					<li>Panels</li>
+					<li>Tables with customizeable columns + responsive design</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Events</h2>
+					<ul>
+					<li>Page create/load/etc</li>
+					<li>tap and taphold</li>	
+					<li>swipe, swipe left, and swipe right</li>
+					<li>navigation, orientationchange</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>Any questions?</h1>
+				</section>
+
+				<section>
+					<h2>Lab One</h2>
+					<ul>
+					<li>Download jQM bits</li>
+					<li>Create a new folder for our app</li>
+					<li>"Install" jQM</li>
+					<li>Just have one page with a header and footer</li>
+					<li>Make the header say.... something</li>
+					</ul>
+				</section>		
+
+				<section>
+					<h2>Lab Two</h2>
+					<ul>
+					<li>Enable Ripple!</li>
+					<li>Copy cordova.js</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Quick Look at jQM Page Events</h2>
+					<ul>
+						<li>You can listen to: pagebeforecreate, pagebeforechange, 
+						pagebeforehide, pagebeforeload, pagebeforeshow, pagechange, 
+						pagechangefailed, pagecreate, pagehide, pageinit, pageload, 
+						pageloadfailed, pageremove, pageshow</li>
+						<li>pageinit is the closest to DOMReady</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Example</h2>
+					<pre><code>
+$(document).on("pageinit", "#mainPage", function(event,data) {
+
+}
+//elsewhere in html...
+//&lt;div data-role="page" id="mainPage"&gt;
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Lab Three</h2>
+					<ul>
+					<li>Setup a new JS file for our app</li>
+					<li>Add an event listener for the main page</li>
+					<li>For now, just console.log it</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Parsing RSS</h2>
+					<ul>
+					<li>We can request remote data via PhoneGap (and Ripple)</li>
+					<li>XML is parseable in JavaScript</li>
+					<li class="fragment">It is also possible for me to star on Broadway</li>
+					<li class="fragment">Google FTW!</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Google Feed API</h2>
+					<ul>
+					<li>https://developers.google.com/feed/</li>
+					<li>Supports Atom and RSS</li>
+					<li>Returns a nice simple dataset</li>
+					</ul>
+				</section>
+				
+				<section>
+				<pre><code>
+
+{
+    "responseData": {
+        "feed": {
+            "feedUrl": "http://www.digg.com/rss/index.xml",
+            "title": "digg.com: Stories / Popular",
+            "link": "http://digg.com/",
+            "author": "",
+            "description": "digg.com: Stories / Popular",
+            "type": "rss20",
+            "entries": [
+                {
+                    "mediaGroups": [
+                        {
+                            "contents": [
+                                {
+                                    "url": "http://digg.com/security/Devil_Is_In_The_Details_DHS_Monitoring_Web_Wrong_Words/t.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 80,
+                                    "width": 80
+                                },
+                                {
+                                    "url": "http://digg.com/security/Devil_Is_In_The_Details_DHS_Monitoring_Web_Wrong_Words/a.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 30,
+                                    "width": 30
+                                },
+                                {
+                                    "url": "http://digg.com/security/Devil_Is_In_The_Details_DHS_Monitoring_Web_Wrong_Words/s.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "isDefault": "true",
+                                    "height": 48,
+                                    "width": 48
+                                },
+                                {
+                                    "url": "http://digg.com/security/Devil_Is_In_The_Details_DHS_Monitoring_Web_Wrong_Words/m.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 120,
+                                    "width": 120
+                                },
+                                {
+                                    "url": "http://digg.com/security/Devil_Is_In_The_Details_DHS_Monitoring_Web_Wrong_Words/l.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 160,
+                                    "width": 160
+                                },
+                                {
+                                    "url": "http://digg.com/security/Devil_Is_In_The_Details_DHS_Monitoring_Web_Wrong_Words/p.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 43,
+                                    "width": 80
+                                }
+                            ]
+                        }
+                    ],
+                    "title": "Devil Is In The Details: DHS Monitoring Web \u0026 \"Wrong\" Words",
+                    "link": "http://feeds.digg.com/~r/digg/popular/~3/UVxtFC251dA/Devil_Is_In_The_Details_DHS_Monitoring_Web_Wrong_Words",
+                    "author": "",
+                    "publishedDate": "Fri, 25 Jun 2010 15:10:02 -0700",
+                    "contentSnippet": "DHS will monitor more U.S. citizens on the Internet, the feds may have the power to pull the plug on the Web, and certain words ...",
+                    "content": "DHS will monitor more U.S. citizens on the Internet, the feds may have the power to pull the plug on the Web, and certain words automatically incriminate you if used in emails. It's been a busy week, eroding away at privacy. The devil in the details of censorship.\u003cp\u003e\u003c/p\u003e\u003cimg src\u003d\"http://feeds.feedburner.com/~r/digg/popular/~4/UVxtFC251dA\" height\u003d\"1\" width\u003d\"1\"\u003e",
+                    "categories": [
+                    ]
+                },
+                {
+                    "title": "iPhone 4 screen yellowing could be a temporary problem",
+                    "link": "http://feeds.digg.com/~r/digg/popular/~3/We-jE7E4pNk/iPhone_4_screen_yellowing_could_be_a_temporary_problem",
+                    "author": "",
+                    "publishedDate": "Fri, 25 Jun 2010 15:00:03 -0700",
+                    "contentSnippet": "New iPhone 4 devices plagued with a yellow discoloration of the screen could be the result of a temporary problem that will ...",
+                    "content": "New iPhone 4 devices plagued with a yellow discoloration of the screen could be the result of a temporary problem that will alleviate itself in a matter of days.\u003cimg src\u003d\"http://feeds.feedburner.com/~r/digg/popular/~4/We-jE7E4pNk\" height\u003d\"1\" width\u003d\"1\"\u003e",
+                    "categories": [
+                    ]
+                },
+                {
+                    "mediaGroups": [
+                        {
+                            "contents": [
+                                {
+                                    "url": "http://digg.com/pets_animals/She_has_no_clue_that_I_am_down_here_Tee_hee_Pic/t.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 80,
+                                    "width": 80
+                                },
+                                {
+                                    "url": "http://digg.com/pets_animals/She_has_no_clue_that_I_am_down_here_Tee_hee_Pic/a.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 30,
+                                    "width": 30
+                                },
+                                {
+                                    "url": "http://digg.com/pets_animals/She_has_no_clue_that_I_am_down_here_Tee_hee_Pic/s.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "isDefault": "true",
+                                    "height": 48,
+                                    "width": 48
+                                },
+                                {
+                                    "url": "http://digg.com/pets_animals/She_has_no_clue_that_I_am_down_here_Tee_hee_Pic/m.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 120,
+                                    "width": 120
+                                },
+                                {
+                                    "url": "http://digg.com/pets_animals/She_has_no_clue_that_I_am_down_here_Tee_hee_Pic/l.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 160,
+                                    "width": 160
+                                },
+                                {
+                                    "url": "http://digg.com/pets_animals/She_has_no_clue_that_I_am_down_here_Tee_hee_Pic/p.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 60,
+                                    "width": 80
+                                }
+                            ]
+                        }
+                    ],
+                    "title": "She has no clue that I am down here. Tee hee! [Pic]",
+                    "link": "http://feeds.digg.com/~r/digg/popular/~3/sfR7jDm-D-Q/She_has_no_clue_that_I_am_down_here_Tee_hee_Pic",
+                    "author": "",
+                    "publishedDate": "Fri, 25 Jun 2010 14:50:02 -0700",
+                    "contentSnippet": "Green Sea Turtle in Hawaii.",
+                    "content": "Green Sea Turtle in Hawaii.\u003cimg src\u003d\"http://feeds.feedburner.com/~r/digg/popular/~4/sfR7jDm-D-Q\" height\u003d\"1\" width\u003d\"1\"\u003e",
+                    "categories": [
+                    ]
+                },
+                {
+                    "mediaGroups": [
+                        {
+                            "contents": [
+                                {
+                                    "url": "http://digg.com/design/Someone_Finally_Built_a_Better_Mousetrap/t.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 80,
+                                    "width": 80
+                                },
+                                {
+                                    "url": "http://digg.com/design/Someone_Finally_Built_a_Better_Mousetrap/a.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 30,
+                                    "width": 30
+                                },
+                                {
+                                    "url": "http://digg.com/design/Someone_Finally_Built_a_Better_Mousetrap/s.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "isDefault": "true",
+                                    "height": 48,
+                                    "width": 48
+                                },
+                                {
+                                    "url": "http://digg.com/design/Someone_Finally_Built_a_Better_Mousetrap/m.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 120,
+                                    "width": 120
+                                },
+                                {
+                                    "url": "http://digg.com/design/Someone_Finally_Built_a_Better_Mousetrap/l.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 160,
+                                    "width": 160
+                                },
+                                {
+                                    "url": "http://digg.com/design/Someone_Finally_Built_a_Better_Mousetrap/p.jpg",
+                                    "type": "image/jpeg",
+                                    "medium": "image",
+                                    "height": 46,
+                                    "width": 80
+                                }
+                            ]
+                        }
+                    ],
+                    "title": "Someone Finally Built a Better Mousetrap",
+                    "link": "http://feeds.digg.com/~r/digg/popular/~3/crtWcK5m9xY/Someone_Finally_Built_a_Better_Mousetrap",
+                    "author": "",
+                    "publishedDate": "Fri, 25 Jun 2010 14:40:03 -0700",
+                    "contentSnippet": "One of the most loved design products at this year’s International Design Excellence Awards was the OneDown mousetrap, which ...",
+                    "content": "One of the most loved design products at this year’s International Design Excellence Awards was the OneDown mousetrap, which swings upright from horizontal due to a rodent’s own weight, to clearly indicate that it has been trapped.\u003cp\u003e\u003c/p\u003e\u003cimg src\u003d\"http://feeds.feedburner.com/~r/digg/popular/~4/crtWcK5m9xY\" height\u003d\"1\" width\u003d\"1\"\u003e",
+                    "categories": [
+                    ]
+                }
+            ]
+        }
+    },
+    "responseDetails": null,
+    "responseStatus": 200
+}
+</code></pre>
+				</section>
+				
+				<section>
+					<h2>Using the Feed API (1)</h2>
+					<ul>
+					<li>First, you load Google's core JS API: https://www.google.com/jsapi</li>
+					<li>Then, ask it to load the API you want:</li>
+					</ul>
+					<pre><code>
+google.load("feeds", "1",{callback:initialize});
+function initialize() {
+	//i can now use the api. woot
+}
+</code></pre>
+				</section>
+
+				<section>
+					<h2>Using the Feed API (2)</h2>
+					<ul>
+					<li>Use the load API</li>
+					<li>Specify the number of entries desired (defaults to 4)</li>
+					</ul>
+					<pre><code>
+var feed = new google.feeds.Feed(RSS);
+feed.setNumEntries(10);
+feed.load(function(result) {
+
+});
+</code></pre>
+				</section>
+				
+				<section>
+					<h2>Lab Four</h2>
+					<ul>
+					<li>Add in the Google JS API</li>
+					<li>Ask it to load the Feeds API</li>
+					<li>Then call load on your RSS feed and console.dir the results</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Lab Five</h2>
+					<ul>
+					<li>Loop through the entries and create a UL/LI set</li>
+					<li>Write it out to the DOM</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>jQuery Mobile and Widgets</h2>
+					<ul>
+					<li>jQM 'prettyfies' stuff on page load</li>
+					<li>If you add you own stuff, there is a simple API (per widget) to update the UI</li>
+					<li class="fragment">$("the list").listview("refresh")</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Lab Six</h2>
+					<ul>
+					<li>Just add the refresh code!</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Handling the Detail Page</h2>
+					<ul>
+					<li class="fragment">We know how to link to another page</li>
+					<li class="fragment">Passing state to the other page</li>
+					<li class="fragment">No - pass attributes to the page</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Solutions</h2>
+					<ul>
+					<li>You First!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>My Solution</h2>
+					<ul>
+					<li>Copy entries to global scope</li>
+					<li>Listen for click event on list and note the entry</li>
+					<li>When the detail page loads, copy data from entries</li>
+					</ul>
+				</section>				
+				
+				<section>
+					<h2>Lab Seven</h2>
+					<ul>
+					<li>Do what I just said</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Handle Web Pages</h2>
+					<ul>
+					<li>Weird crap happens if you just link</li>
+					<li>PhoneGap provides a way to let user's view web content in a "captured" format</li>
+					<li>InAppBrowser API</li>
+					<li>Uses window.open</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Lab Eight</h2>
+					<ul>
+						<li>Modify the content display to include a full link</li>
+						<li>Capture the touch event and use InAppBrowser API</li>
+						<li>Use jQM Button widget for the link to make it awesome</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Lab Nine</h2>
+					<img class="fragment" src="img/bobapony.jpg" style="max-height:500px">
+				</section>
+
+				<!--
+Lab 1 - Basics
+Lab 2 - Enable Ripple - means getting the cordova.js for android
+Lab 3 - Add main JS and an event listener for the mainpage load event
+Lab 4 - Use Google Feeds API
+5 - write it out as a list
+Lab 6 - Use jQM list api to make the result prettier
+Lab 7 - Detail page for entry
+Lab 8 - InAppBrowser api 
+Lab 9 - test with PhoneGap Build
+10? handle offline
+-->
+				<section>
+					<h1>THE END</h1>
+					<h3>BY Hakim El Hattab / hakim.se</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+<style>
+.reveal img.transparent {
+	border: none;
+	background: none;
+	box-shadow: none; 
+}	
+
+.adobe {
+padding-left: 10px; 
+padding-top: 40px; 
+padding-bottom: 10px; 
+position: absolute; 
+right: 80px; 
+top: 0px; 
+background-color: #F00; 
+width: 40px; 
+height: 40px;
+}
+</style>
+<div class="adobe">
+	<img src="img/adobe_logo.png" width="30" height="40">
+</div>		
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
